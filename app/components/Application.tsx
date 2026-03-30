@@ -74,23 +74,13 @@ export default function Application() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    const webhookUrl = process.env.NEXT_PUBLIC_WEBHOOK_URL
-
-    if (!webhookUrl) {
-      setStatus('error')
-      setErrorMsg(
-        'Applications are temporarily unavailable. Please reach out directly to apply.'
-      )
-      return
-    }
-
     setStatus('submitting')
 
     try {
-      const res = await fetch(webhookUrl, {
+      const res = await fetch('/api/apply', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...form, source: 'kung-fu-legacy' }),
+        body: JSON.stringify(form),
       })
 
       if (!res.ok) throw new Error(`Response ${res.status}`)
