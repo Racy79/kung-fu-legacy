@@ -1,0 +1,72 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 22 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: 'easeOut' } },
+}
+
+const stagger = {
+  show: { transition: { staggerChildren: 0.15 } },
+}
+
+const notForYou = [
+  'You are looking for casual training.',
+  'You want quick results without discipline.',
+  'You avoid correction.',
+]
+
+const forYou = [
+  'You value structure over shortcuts.',
+  'You are willing to be challenged.',
+  'You are ready to commit to real development.',
+]
+
+export default function Filter() {
+  return (
+    <section className="section-pad bg-espresso/15">
+      <motion.div
+        className="max-w-4xl mx-auto"
+        variants={stagger}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: '-80px' }}
+      >
+        <div className="grid md:grid-cols-2 gap-16 md:gap-28">
+
+          {/* Not for you */}
+          <motion.div variants={fadeUp}>
+            <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-bone/35 mb-12">
+              This is not for you if:
+            </p>
+            <ul className="space-y-7">
+              {notForYou.map((item, i) => (
+                <li key={i} className="flex items-start gap-5">
+                  <span className="mt-2.5 w-1 h-1 rounded-full bg-bone/25 flex-shrink-0" />
+                  <p className="body text-bone/40">{item}</p>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* For you */}
+          <motion.div variants={fadeUp}>
+            <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-gold mb-12">
+              This is for you if:
+            </p>
+            <ul className="space-y-7">
+              {forYou.map((item, i) => (
+                <li key={i} className="flex items-start gap-5">
+                  <span className="mt-2.5 w-1 h-1 rounded-full bg-gold flex-shrink-0" />
+                  <p className="body text-bone/80">{item}</p>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+        </div>
+      </motion.div>
+    </section>
+  )
+}
