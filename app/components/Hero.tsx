@@ -28,6 +28,7 @@ export default function Hero() {
           alt="Rafael Gonzalez — Kung Fu Legacy"
           fill
           priority
+          quality={100}
           className="object-cover object-top md:object-[center_15%] transition-opacity duration-1000"
           onError={(e) => { e.currentTarget.style.display = 'none' }}
         />
@@ -35,7 +36,7 @@ export default function Hero() {
 
       {/* ── Overlays ───────────────────────────────────────────────────────── */}
       {/* Directional gradient: heavy left, fades right so face stays clear */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/20" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/10" />
       {/* Bottom fade into next section */}
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-matte-black to-transparent" />
 
