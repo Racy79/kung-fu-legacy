@@ -91,7 +91,13 @@ export default function Application() {
     if (!form.willTravel) e.willTravel = 'Please answer this question.'
     if (!form.understandCommunity) e.understandCommunity = 'Please answer this question.'
     setErrors(e)
-    return Object.keys(e).length === 0
+    if (Object.keys(e).length > 0) {
+      setTimeout(() => {
+        document.querySelector('[data-error]')?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      }, 50)
+      return false
+    }
+    return true
   }
 
   const toggleGoal = (goal: string) =>
@@ -196,13 +202,12 @@ export default function Application() {
                 <label className="label block mb-3">Full Name</label>
                 <input
                   type="text"
-                  required
                   value={form.fullName}
                   onChange={e => set('fullName', e.target.value)}
                   className="field"
                   placeholder="Your full name"
                 />
-                {errors.fullName && <p className="mt-2 font-sans text-xs text-gold/70">{errors.fullName}</p>}
+                {errors.fullName && <p data-error className="mt-2 font-sans text-xs text-gold/70">{errors.fullName}</p>}
               </div>
 
               <div className="grid sm:grid-cols-2 gap-6">
@@ -215,7 +220,7 @@ export default function Application() {
                     className="field"
                     placeholder="(555) 000-0000"
                   />
-                  {errors.phone && <p className="mt-2 font-sans text-xs text-gold/70">{errors.phone}</p>}
+                  {errors.phone && <p data-error className="mt-2 font-sans text-xs text-gold/70">{errors.phone}</p>}
                 </div>
                 <div>
                   <label className="label block mb-3">Email</label>
@@ -226,7 +231,7 @@ export default function Application() {
                     className="field"
                     placeholder="your@email.com"
                   />
-                  {errors.email && <p className="mt-2 font-sans text-xs text-gold/70">{errors.email}</p>}
+                  {errors.email && <p data-error className="mt-2 font-sans text-xs text-gold/70">{errors.email}</p>}
                 </div>
               </div>
 
@@ -251,7 +256,7 @@ export default function Application() {
                     </svg>
                   </div>
                 </div>
-                {errors.experience && <p className="mt-2 font-sans text-xs text-gold/70">{errors.experience}</p>}
+                {errors.experience && <p data-error className="mt-2 font-sans text-xs text-gold/70">{errors.experience}</p>}
               </div>
 
               <div>
@@ -263,7 +268,7 @@ export default function Application() {
                   className="field resize-none"
                   placeholder="Be specific."
                 />
-                {errors.whyTrain && <p className="mt-2 font-sans text-xs text-gold/70">{errors.whyTrain}</p>}
+                {errors.whyTrain && <p data-error className="mt-2 font-sans text-xs text-gold/70">{errors.whyTrain}</p>}
               </div>
             </div>
 
@@ -345,6 +350,13 @@ export default function Application() {
                 </div>
               ))}
             </div>
+
+            {/* ── Validation banner ──────────────────────────────────────── */}
+            {Object.keys(errors).length > 0 && (
+              <p className="font-sans text-sm text-gold/80 border border-gold/20 px-5 py-4">
+                Please fill in all required fields before submitting.
+              </p>
+            )}
 
             {/* ── Error message ──────────────────────────────────────────── */}
             {status === 'error' && (
