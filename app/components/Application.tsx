@@ -83,15 +83,14 @@ export default function Application() {
         body: JSON.stringify(form),
       })
 
-      if (!res.ok) throw new Error(`Response ${res.status}`)
+      const data = await res.json()
+      if (!res.ok) throw new Error(data.error || `Response ${res.status}`)
 
       trackFormSubmit()
       setStatus('success')
-    } catch {
+    } catch (err) {
       setStatus('error')
-      setErrorMsg(
-        'Something went wrong. Please try again or contact us directly.'
-      )
+      setErrorMsg(`Error: ${err}`)
     }
   }
 
