@@ -9,11 +9,35 @@ export async function POST(req: NextRequest) {
 
   const body = await req.json()
 
+  const emailBody = `
+NEW TRAINING APPLICATION — KUNG FU LEGACY
+
+Name: ${body.fullName}
+Phone: ${body.phone}
+Email: ${body.email}
+Experience: ${body.experience}
+
+Why they want to train:
+${body.whyTrain}
+
+Goals: ${Array.isArray(body.developGoals) ? body.developGoals.join(', ') : body.developGoals}
+
+Commits to training: ${body.commitToTraining}
+Accepts challenge: ${body.acceptChallenge}
+Will travel: ${body.willTravel}
+Community mindset: ${body.understandCommunity}
+  `.trim()
+
   try {
     const res = await fetch(webhookUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ ...body, source: 'kung-fu-legacy' }),
+      body: JSON.stringify({
+        subject: 'New Training Application — Kung Fu Legacy',
+        emailBody,
+        source: 'kung-fu-legacy',
+        ...body,
+      }),
     })
 
     if (!res.ok) {
