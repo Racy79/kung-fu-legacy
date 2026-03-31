@@ -110,7 +110,7 @@ export default function Legacy() {
             alt="Kung Fu Legacy — Rafael Gonzalez with students"
             fill
             quality={100}
-            className="object-cover object-center"
+            className="object-cover object-[60%_center]"
           />
           <div className="absolute inset-0 bg-black/40" />
         </motion.div>
