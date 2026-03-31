@@ -19,6 +19,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  verification: {
+    google: 'Ov1NIWBODJau4QwAxr3NX-6TTbgejiCAqEtQCyY-lZk',
+  },
   title: 'Kung Fu Legacy — Wing Chun Instruction in Converse, Texas',
   description:
     'Authentic Wing Chun instruction and personal development in Converse, Texas under Sifu Rafael Gonzalez. Direct lineage from Ip Man. Selective enrollment. Apply now.',
