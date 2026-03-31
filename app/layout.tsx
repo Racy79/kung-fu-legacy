@@ -3,6 +3,7 @@ import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
 import Analytics from './components/Analytics'
 import ScrollTracker from './components/ScrollTracker'
+import ScrollToTop from './components/ScrollToTop'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-matte-black text-bone antialiased">
         <Analytics />
         <ScrollTracker />
+        <ScrollToTop />
         {children}
       </body>
     </html>

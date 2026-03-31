@@ -93,8 +93,11 @@ export default function Application() {
     setErrors(e)
     if (Object.keys(e).length > 0) {
       setTimeout(() => {
-        document.querySelector('[data-error]')?.scrollIntoView({ behavior: 'smooth', block: 'center' })
-      }, 50)
+        const firstError = document.querySelector('[data-error]')
+        if (firstError) {
+          firstError.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }
+      }, 80)
       return false
     }
     return true
