@@ -113,10 +113,10 @@ export default function Application() {
         </motion.h2>
 
         <motion.div variants={stagger} className="space-y-3 mb-8">
-          <motion.p variants={fadeUp} className="body text-bone/50">
+          <motion.p variants={fadeUp} className="body text-bone/65">
             Not because of space.
           </motion.p>
-          <motion.p variants={fadeUp} className="body text-bone/50">
+          <motion.p variants={fadeUp} className="body text-bone/65">
             Because of standard.
           </motion.p>
         </motion.div>
@@ -129,7 +129,7 @@ export default function Application() {
           But it gives you what casual training never will.
         </motion.p>
 
-        <motion.p variants={fadeUp} className="body text-bone/35 mb-16">
+        <motion.p variants={fadeUp} className="body text-bone/55 mb-16">
           If this speaks to you, apply below.
         </motion.p>
 
@@ -148,7 +148,7 @@ export default function Application() {
               Application received.
             </h3>
             <p className="body text-bone/50 mb-2">Applications are reviewed.</p>
-            <p className="body text-bone/50">If accepted, you will be contacted.</p>
+            <p className="body text-bone/65">If accepted, you will be contacted.</p>
             <div className="w-px h-14 bg-gold/30 mx-auto mt-14" />
           </motion.div>
         ) : (

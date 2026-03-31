@@ -20,7 +20,7 @@ export default function FinalClose() {
       >
         <div className="w-px h-16 bg-gold/25 mx-auto mb-20" />
 
-        <p className="font-serif text-xl md:text-2xl text-bone/60 italic mb-6 leading-relaxed">
+        <p className="font-serif text-xl md:text-2xl text-bone italic mb-6 leading-relaxed">
           Some people are not looking for more information.
         </p>
         <p className="font-serif text-xl md:text-2xl text-bone italic mb-20 leading-relaxed">

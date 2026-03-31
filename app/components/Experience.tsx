@@ -89,7 +89,7 @@ export default function Experience() {
           variants={fadeUp}
           className="border-l-2 border-gold pl-8 py-2"
         >
-          <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-bone/40 mb-4">
+          <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-bone/55 mb-4">
             And something most never reach:
           </p>
           <p className="font-serif text-2xl md:text-3xl text-gold">

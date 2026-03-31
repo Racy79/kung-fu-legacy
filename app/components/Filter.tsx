@@ -37,14 +37,14 @@ export default function Filter() {
 
           {/* Not for you */}
           <motion.div variants={fadeUp}>
-            <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-bone/35 mb-12">
+            <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-gold mb-12">
               This is not for you if:
             </p>
             <ul className="space-y-7">
               {notForYou.map((item, i) => (
                 <li key={i} className="flex items-start gap-5">
-                  <span className="mt-2.5 w-1 h-1 rounded-full bg-bone/25 flex-shrink-0" />
-                  <p className="body text-bone/40">{item}</p>
+                  <span className="mt-2.5 w-1 h-1 rounded-full bg-gold flex-shrink-0" />
+                  <p className="body text-bone/80">{item}</p>
                 </li>
               ))}
             </ul>

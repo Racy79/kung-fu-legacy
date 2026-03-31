@@ -37,7 +37,7 @@ export default function Integration() {
 
         <motion.p
           variants={fadeUp}
-          className="font-serif text-xl md:text-2xl text-bone/55 italic mb-20"
+          className="font-serif text-xl md:text-2xl text-bone/65 italic mb-20"
         >
           It shapes how you move, think, and carry yourself.
         </motion.p>
@@ -57,7 +57,7 @@ export default function Integration() {
 
         <motion.div variants={fadeUp} className="gold-line mb-20" />
 
-        <motion.p variants={fadeUp} className="body text-bone/50 mb-20">
+        <motion.p variants={fadeUp} className="font-serif text-xl text-gold mb-20">
           Training does not stay on the floor.
         </motion.p>
 
@@ -68,7 +68,7 @@ export default function Integration() {
               <div className="w-px bg-gold/25 flex-shrink-0" />
               <div>
                 <p className="font-serif text-xl text-bone mb-1">{headline}</p>
-                <p className="font-sans text-sm text-bone/35">{sub}</p>
+                <p className="font-sans text-sm text-bone/55">{sub}</p>
               </div>
             </motion.div>
           ))}

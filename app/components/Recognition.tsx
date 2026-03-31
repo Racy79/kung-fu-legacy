@@ -46,7 +46,7 @@ export default function Recognition() {
 
         <motion.p
           variants={fadeUp}
-          className="font-serif text-xl md:text-2xl text-bone/50 italic mb-20"
+          className="font-serif text-xl md:text-2xl text-bone/65 italic mb-20"
         >
           But something has always been missing.
         </motion.p>
@@ -61,7 +61,7 @@ export default function Recognition() {
               {primary && (
                 <p className="body mb-2 text-bone/80">{primary}</p>
               )}
-              <p className="body text-bone/40">{secondary}</p>
+              <p className="body text-bone/55">{secondary}</p>
             </motion.div>
           ))}
         </motion.div>

@@ -44,7 +44,7 @@ export default function Legacy() {
 
         <motion.p
           variants={fadeUp}
-          className="font-serif text-xl text-bone/45 italic mb-20"
+          className="font-serif text-xl text-bone/60 italic mb-20"
         >
           This is not learned casually.<br />
           It is passed, refined, and earned.
@@ -113,7 +113,7 @@ export default function Legacy() {
         {/* ── Closing lines ─────────────────────────────────────────────────── */}
         <motion.div variants={stagger} className="space-y-4">
           {closing.map((text, i) => (
-            <motion.p key={i} variants={fadeUp} className="body text-bone/50">
+            <motion.p key={i} variants={fadeUp} className="body text-bone/65">
               {text}
             </motion.p>
           ))}
