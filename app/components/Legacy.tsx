@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 22 },
@@ -99,15 +100,19 @@ export default function Legacy() {
           ))}
         </motion.div>
 
-        {/* ── Training Image Placeholder 1 ──────────────────────────────────── */}
+        {/* ── Training Image ─────────────────────────────────────────────────── */}
         <motion.div
           variants={fadeUp}
           className="relative h-72 md:h-[420px] overflow-hidden mb-20 group"
         >
-          {/* Replace this div with <Image> when training photos are ready */}
-          <div className="absolute inset-0 bg-espresso/50 border border-bone/8 flex items-center justify-center">
-            <p className="label opacity-30">Training Photo — Correction</p>
-          </div>
+          <Image
+            src="/images/image.jpg"
+            alt="Kung Fu Legacy — Rafael Gonzalez with students"
+            fill
+            quality={100}
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-black/40" />
         </motion.div>
 
         {/* ── Closing lines ─────────────────────────────────────────────────── */}
