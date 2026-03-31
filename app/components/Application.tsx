@@ -60,6 +60,7 @@ export default function Application() {
   const [form, setForm] = useState<FormData>(INITIAL)
   const [status, setStatus] = useState<FormState>('idle')
   const [errorMsg, setErrorMsg] = useState('')
+  const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>({})
 
   useEffect(() => {
     if (status === 'success') {
@@ -67,8 +68,24 @@ export default function Application() {
     }
   }, [status])
 
-  const set = (field: keyof FormData, value: string) =>
+  const set = (field: keyof FormData, value: string) => {
     setForm(prev => ({ ...prev, [field]: value }))
+    setErrors(prev => ({ ...prev, [field]: '' }))
+  }
+
+  const validate = (): boolean => {
+    const e: Partial<Record<keyof FormData, string>> = {}
+    if (!form.fullName.trim()) e.fullName = 'Full name is required.'
+    if (!form.phone.trim()) e.phone = 'Phone is required.'
+    if (!form.email.trim()) e.email = 'Email is required.'
+    if (!form.experience) e.experience = 'Please select your experience level.'
+    if (!form.whyTrain.trim()) e.whyTrain = 'Please tell us why you want to train.'
+    if (!form.commitToTraining) e.commitToTraining = 'Please answer this question.'
+    if (!form.acceptChallenge) e.acceptChallenge = 'Please answer this question.'
+    if (!form.willTravel) e.willTravel = 'Please answer this question.'
+    setErrors(e)
+    return Object.keys(e).length === 0
+  }
 
   const toggleGoal = (goal: string) =>
     setForm(prev => ({
@@ -80,6 +97,7 @@ export default function Application() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    if (!validate()) return
     setStatus('submitting')
 
     try {
@@ -177,6 +195,7 @@ export default function Application() {
                   className="field"
                   placeholder="Your full name"
                 />
+                {errors.fullName && <p className="mt-2 font-sans text-xs text-gold/70">{errors.fullName}</p>}
               </div>
 
               <div className="grid sm:grid-cols-2 gap-6">
@@ -184,23 +203,23 @@ export default function Application() {
                   <label className="label block mb-3">Phone</label>
                   <input
                     type="tel"
-                    required
                     value={form.phone}
                     onChange={e => set('phone', e.target.value)}
                     className="field"
                     placeholder="(555) 000-0000"
                   />
+                  {errors.phone && <p className="mt-2 font-sans text-xs text-gold/70">{errors.phone}</p>}
                 </div>
                 <div>
                   <label className="label block mb-3">Email</label>
                   <input
                     type="email"
-                    required
                     value={form.email}
                     onChange={e => set('email', e.target.value)}
                     className="field"
                     placeholder="your@email.com"
                   />
+                  {errors.email && <p className="mt-2 font-sans text-xs text-gold/70">{errors.email}</p>}
                 </div>
               </div>
 
@@ -208,7 +227,6 @@ export default function Application() {
                 <label className="label block mb-3">Training Experience</label>
                 <div className="relative">
                   <select
-                    required
                     value={form.experience}
                     onChange={e => set('experience', e.target.value)}
                     className="field appearance-none cursor-pointer bg-matte-black pr-10"
@@ -226,18 +244,19 @@ export default function Application() {
                     </svg>
                   </div>
                 </div>
+                {errors.experience && <p className="mt-2 font-sans text-xs text-gold/70">{errors.experience}</p>}
               </div>
 
               <div>
                 <label className="label block mb-3">Why do you want to train?</label>
                 <textarea
-                  required
                   rows={5}
                   value={form.whyTrain}
                   onChange={e => set('whyTrain', e.target.value)}
                   className="field resize-none"
                   placeholder="Be specific."
                 />
+                {errors.whyTrain && <p className="mt-2 font-sans text-xs text-gold/70">{errors.whyTrain}</p>}
               </div>
             </div>
 
@@ -315,6 +334,7 @@ export default function Application() {
                       )
                     })}
                   </div>
+                  {errors[field] && <p className="mt-3 font-sans text-xs text-gold/70">{errors[field]}</p>}
                 </div>
               ))}
             </div>
