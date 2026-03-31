@@ -13,7 +13,7 @@ const stagger = {
 
 const lines = [
   'I am not interested in volume. I am interested in people who are serious.',
-  'Most people think they know what they want from training. They don't. They come looking for technique. What they need is structure — and the discipline to build it.',
+  "Most people think they know what they want from training. They don't. They come looking for technique. What they need is structure — and the discipline to build it.",
   'I am in my late forties. People regularly mistake me for someone in their early thirties. My mind is sharper, my body is stronger, and I live at a standard most people only talk about wanting.',
   'That is not a claim. That is what consistent, serious training builds.',
   'What you get here is not just Wing Chun. You get access to everything I have built — how I train, how I eat, how I think. The full model. Three decades of refinement.',
