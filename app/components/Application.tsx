@@ -207,7 +207,7 @@ export default function Application() {
                   className={`field ${errors.fullName ? 'border-gold/60' : ''}`}
                   placeholder="Your full name"
                 />
-                {errors.fullName && <p data-error className="mt-2 font-sans text-xs text-gold/70">{errors.fullName}</p>}
+                {errors.fullName && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.fullName}</p>}
               </div>
 
               <div className="grid sm:grid-cols-2 gap-6">
@@ -220,7 +220,7 @@ export default function Application() {
                     className={`field ${errors.phone ? 'border-gold/60' : ''}`}
                     placeholder="(555) 000-0000"
                   />
-                  {errors.phone && <p data-error className="mt-2 font-sans text-xs text-gold/70">{errors.phone}</p>}
+                  {errors.phone && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.phone}</p>}
                 </div>
                 <div>
                   <label className="label block mb-3">Email</label>
@@ -231,7 +231,7 @@ export default function Application() {
                     className={`field ${errors.email ? 'border-gold/60' : ''}`}
                     placeholder="your@email.com"
                   />
-                  {errors.email && <p data-error className="mt-2 font-sans text-xs text-gold/70">{errors.email}</p>}
+                  {errors.email && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.email}</p>}
                 </div>
               </div>
 
@@ -256,7 +256,7 @@ export default function Application() {
                     </svg>
                   </div>
                 </div>
-                {errors.experience && <p data-error className="mt-2 font-sans text-xs text-gold/70">{errors.experience}</p>}
+                {errors.experience && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.experience}</p>}
               </div>
 
               <div>
@@ -268,7 +268,7 @@ export default function Application() {
                   className={`field resize-none ${errors.whyTrain ? 'border-gold/60' : ''}`}
                   placeholder="Be specific."
                 />
-                {errors.whyTrain && <p data-error className="mt-2 font-sans text-xs text-gold/70">{errors.whyTrain}</p>}
+                {errors.whyTrain && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.whyTrain}</p>}
               </div>
             </div>
 
