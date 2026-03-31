@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 22 },
@@ -74,14 +75,18 @@ export default function Integration() {
           ))}
         </motion.div>
 
-        {/* ── Training Image Placeholder 3 ──────────────────────────────────── */}
+        {/* ── Training Image ─────────────────────────────────────────────────── */}
         <motion.div
           variants={fadeUp}
-          className="relative h-72 md:h-[420px] overflow-hidden mt-20"
+          className="relative h-72 md:h-[520px] overflow-hidden mt-20"
         >
-          <div className="absolute inset-0 bg-espresso/50 border border-bone/8 flex items-center justify-center">
-            <p className="label opacity-30">Training Photo — Structure Work</p>
-          </div>
+          <Image
+            src="/images/d46c4adf-7ca3-412f-a1fd-66064a3cc951.png"
+            alt="Rafael Gonzalez — Kung Fu Legacy"
+            fill
+            quality={100}
+            className="object-cover object-center"
+          />
         </motion.div>
       </motion.div>
     </section>
