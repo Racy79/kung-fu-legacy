@@ -103,16 +103,17 @@ export default function Legacy() {
         {/* ── Training Image ─────────────────────────────────────────────────── */}
         <motion.div
           variants={fadeUp}
-          className="relative h-72 md:h-[420px] overflow-hidden mb-20 group"
+          className="relative overflow-hidden mb-20 border border-gold/30"
         >
           <Image
             src="/images/image.jpg"
             alt="Kung Fu Legacy — Rafael Gonzalez with students"
-            fill
+            width={1200}
+            height={800}
             quality={100}
-            className="object-cover object-[60%_center]"
+            className="w-full h-auto"
           />
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-black/25" />
         </motion.div>
 
         {/* ── Closing lines ─────────────────────────────────────────────────── */}
