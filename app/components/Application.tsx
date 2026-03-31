@@ -63,7 +63,7 @@ export default function Application() {
 
   useEffect(() => {
     if (status === 'success') {
-      document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })
+      document.getElementById('apply-confirmation')?.scrollIntoView({ behavior: 'smooth' })
     }
   }, [status])
 
@@ -144,6 +144,7 @@ export default function Application() {
         {/* ── Success State ─────────────────────────────────────────────────── */}
         {status === 'success' ? (
           <motion.div
+            id="apply-confirmation"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9 }}
