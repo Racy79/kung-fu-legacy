@@ -3,6 +3,7 @@ import Recognition from './components/Recognition'
 import Shift from './components/Shift'
 import AnchorQuote from './components/AnchorQuote'
 import Legacy from './components/Legacy'
+import Voice from './components/Voice'
 import Filter from './components/Filter'
 import Experience from './components/Experience'
 import Integration from './components/Integration'
@@ -17,6 +18,7 @@ export default function Home() {
       <Shift />
       <AnchorQuote />
       <Legacy />
+      <Voice />
       <Filter />
       <Experience />
       <Integration />
