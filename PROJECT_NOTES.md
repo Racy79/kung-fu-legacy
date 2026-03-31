@@ -23,9 +23,11 @@ https://www.thekungfulegacy.com
 
 ## Form / Applications
 - Submissions go to: rafaelgonzalezrosado@gmail.com
-- Via: Make.com scenario "Integration Webhooks, Gmail"
-- Webhook URL: https://hook.us2.make.com/24itgbw91m3cdyq8j64gwi5mgz6hru16
+- Via: n8n workflow "Kung Fu Legacy — Application Form"
+- n8n URL: https://legacywingchunmethod.com
+- Production webhook URL: https://legacywingchunmethod.com/webhook/kung-fu-legacy-apply
 - EasyPanel env var: WEBHOOK_URL (set in Environment tab as .env file)
+- SMTP credential: rafaelgonzalezrosado@gmail.com via Gmail App Password
 
 ## Environment Variables (EasyPanel → Environment tab)
 WEBHOOK_URL=https://hook.us2.make.com/24itgbw91m3cdyq8j64gwi5mgz6hru16
