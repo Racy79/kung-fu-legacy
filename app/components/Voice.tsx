@@ -37,15 +37,13 @@ export default function Voice() {
         <div className="w-px h-12 bg-gold/30 mb-14" />
 
         <motion.div variants={stagger} className="space-y-8">
-          {lines.map((line, i) => (
+          {lines.slice(0, -1).map((line, i) => (
             <motion.p
               key={i}
               variants={fadeUp}
               className={`font-serif italic leading-relaxed ${
                 i === 0
                   ? 'text-xl md:text-2xl text-bone'
-                  : i === lines.length - 1
-                  ? 'text-lg text-gold'
                   : 'text-lg md:text-xl text-bone/80'
               }`}
             >
@@ -53,6 +51,15 @@ export default function Voice() {
             </motion.p>
           ))}
         </motion.div>
+
+        <motion.div variants={fadeUp} className="gold-line mt-14 mb-14" />
+
+        <motion.p
+          variants={fadeUp}
+          className="font-serif text-2xl md:text-3xl text-bone"
+        >
+          {lines[lines.length - 1]}
+        </motion.p>
 
         <div className="w-px h-12 bg-gold/30 mt-14" />
 
