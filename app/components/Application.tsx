@@ -88,6 +88,7 @@ export default function Application() {
 
       trackFormSubmit()
       setStatus('success')
+      document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })
     } catch (err) {
       setStatus('error')
       setErrorMsg(`Error: ${err}`)
