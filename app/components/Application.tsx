@@ -204,7 +204,7 @@ export default function Application() {
                   type="text"
                   value={form.fullName}
                   onChange={e => set('fullName', e.target.value)}
-                  className={`field ${errors.fullName ? 'border-gold/60' : ''}`}
+                  className={`field ${errors.fullName ? '!border-gold/60' : ''}`}
                   placeholder="Your full name"
                 />
                 {errors.fullName && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.fullName}</p>}
@@ -217,7 +217,7 @@ export default function Application() {
                     type="tel"
                     value={form.phone}
                     onChange={e => set('phone', e.target.value)}
-                    className={`field ${errors.phone ? 'border-gold/60' : ''}`}
+                    className={`field ${errors.phone ? '!border-gold/60' : ''}`}
                     placeholder="(555) 000-0000"
                   />
                   {errors.phone && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.phone}</p>}
@@ -228,7 +228,7 @@ export default function Application() {
                     type="email"
                     value={form.email}
                     onChange={e => set('email', e.target.value)}
-                    className={`field ${errors.email ? 'border-gold/60' : ''}`}
+                    className={`field ${errors.email ? '!border-gold/60' : ''}`}
                     placeholder="your@email.com"
                   />
                   {errors.email && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.email}</p>}
@@ -241,7 +241,7 @@ export default function Application() {
                   <select
                     value={form.experience}
                     onChange={e => set('experience', e.target.value)}
-                    className={`field appearance-none cursor-pointer bg-matte-black pr-10 ${errors.experience ? 'border-gold/60' : ''}`}
+                    className={`field appearance-none cursor-pointer bg-matte-black pr-10 ${errors.experience ? '!border-gold/60' : ''}`}
                   >
                     <option value="" disabled>Select your background</option>
                     <option value="none">None</option>
@@ -265,7 +265,7 @@ export default function Application() {
                   rows={5}
                   value={form.whyTrain}
                   onChange={e => set('whyTrain', e.target.value)}
-                  className={`field resize-none ${errors.whyTrain ? 'border-gold/60' : ''}`}
+                  className={`field resize-none ${errors.whyTrain ? '!border-gold/60' : ''}`}
                   placeholder="Be specific."
                 />
                 {errors.whyTrain && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.whyTrain}</p>}
