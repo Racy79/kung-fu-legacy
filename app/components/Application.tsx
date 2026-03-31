@@ -49,7 +49,7 @@ const QUALIFIERS: { field: keyof FormData; question: string }[] = [
   },
   {
     field: 'understandCommunity',
-    question: 'Do you understand that this is a community of practitioners, not an individual service?',
+    question: 'Training here is built around a group of dedicated practitioners. Are you looking to be part of that, not just receive individual instruction?',
   },
 ]
 
