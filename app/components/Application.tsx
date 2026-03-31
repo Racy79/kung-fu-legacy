@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { trackFormSubmit } from '../lib/analytics'
 
@@ -61,6 +61,12 @@ export default function Application() {
   const [status, setStatus] = useState<FormState>('idle')
   const [errorMsg, setErrorMsg] = useState('')
 
+  useEffect(() => {
+    if (status === 'success') {
+      document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })
+    }
+  }, [status])
+
   const set = (field: keyof FormData, value: string) =>
     setForm(prev => ({ ...prev, [field]: value }))
 
@@ -88,7 +94,6 @@ export default function Application() {
 
       trackFormSubmit()
       setStatus('success')
-      document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })
     } catch (err) {
       setStatus('error')
       setErrorMsg(`Error: ${err}`)
