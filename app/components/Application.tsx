@@ -95,7 +95,7 @@ export default function Application() {
   }
 
   return (
-    <section id="apply" className="section-pad bg-matte-black">
+    <section id="apply" className="section-pad bg-matte-black scroll-mt-8">
       <motion.div
         className="max-w-2xl mx-auto"
         variants={stagger}
@@ -141,15 +141,17 @@ export default function Application() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9 }}
-            className="text-center py-20"
+            className="text-center py-16 px-10 border border-gold/60"
+            style={{ boxShadow: '0 0 40px rgba(198,169,98,0.08)' }}
           >
-            <div className="w-px h-14 bg-gold/30 mx-auto mb-14" />
+            <div className="w-px h-10 bg-gold/40 mx-auto mb-10" />
+            <p className="label mb-6 text-gold">Received</p>
             <h3 className="font-serif text-2xl md:text-3xl text-bone mb-8">
               Application received.
             </h3>
-            <p className="body text-bone/50 mb-2">Applications are reviewed.</p>
+            <p className="body text-bone/65 mb-2">Applications are reviewed.</p>
             <p className="body text-bone/65">If accepted, you will be contacted.</p>
-            <div className="w-px h-14 bg-gold/30 mx-auto mt-14" />
+            <div className="w-px h-10 bg-gold/40 mx-auto mt-10" />
           </motion.div>
         ) : (
           /* ── Form ───────────────────────────────────────────────────────── */
