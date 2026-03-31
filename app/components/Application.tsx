@@ -346,7 +346,7 @@ export default function Application() {
                       )
                     })}
                   </div>
-                  {errors[field] && <p className="mt-3 font-sans text-xs text-gold/70">{errors[field]}</p>}
+                  {errors[field] && <p data-error className="mt-3 font-sans text-sm text-gold">{errors[field]}</p>}
                 </div>
               ))}
             </div>
