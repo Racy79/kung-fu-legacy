@@ -16,6 +16,7 @@ interface FormData {
   commitToTraining: string
   acceptChallenge: string
   willTravel: string
+  understandCommunity: string
 }
 
 const INITIAL: FormData = {
@@ -28,6 +29,7 @@ const INITIAL: FormData = {
   commitToTraining: '',
   acceptChallenge: '',
   willTravel: '',
+  understandCommunity: '',
 }
 
 const GOALS = ['Structure', 'Discipline', 'Self Defense', 'Personal Growth']
@@ -44,6 +46,10 @@ const QUALIFIERS: { field: keyof FormData; question: string }[] = [
   {
     field: 'willTravel',
     question: 'Are you willing to travel consistently for training if required?',
+  },
+  {
+    field: 'understandCommunity',
+    question: 'Do you understand that this is a community of practitioners, not an individual service?',
   },
 ]
 
@@ -83,6 +89,7 @@ export default function Application() {
     if (!form.commitToTraining) e.commitToTraining = 'Please answer this question.'
     if (!form.acceptChallenge) e.acceptChallenge = 'Please answer this question.'
     if (!form.willTravel) e.willTravel = 'Please answer this question.'
+    if (!form.understandCommunity) e.understandCommunity = 'Please answer this question.'
     setErrors(e)
     return Object.keys(e).length === 0
   }
