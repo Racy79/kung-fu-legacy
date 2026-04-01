@@ -10,22 +10,28 @@ export async function POST(req: NextRequest) {
   const body = await req.json()
 
   const emailBody = `
-NEW TRAINING APPLICATION — KUNG FU LEGACY
+NEW BROTHERHOOD APPLICATION — KUNG FU LEGACY
 
 Name: ${body.fullName}
 Phone: ${body.phone}
 Email: ${body.email}
 Experience: ${body.experience}
 
-Why they want to train:
+What they do and are building:
+${body.profession}
+
+Why they want to enter the brotherhood:
 ${body.whyTrain}
+
+What they bring to the group:
+${body.whatYouBring}
 
 Goals: ${Array.isArray(body.developGoals) ? body.developGoals.join(', ') : body.developGoals}
 
-Commits to training: ${body.commitToTraining}
-Accepts challenge: ${body.acceptChallenge}
+In a position to commit: ${body.commitToTraining}
+Ready to be led: ${body.acceptChallenge}
 Will travel: ${body.willTravel}
-Community mindset: ${body.understandCommunity}
+Understands contribution over consumption: ${body.understandCommunity}
   `.trim()
 
   try {
@@ -33,7 +39,7 @@ Community mindset: ${body.understandCommunity}
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        subject: 'New Training Application — Kung Fu Legacy',
+        subject: 'New Brotherhood Application — Kung Fu Legacy',
         emailBody,
         source: 'kung-fu-legacy',
         ...body,
