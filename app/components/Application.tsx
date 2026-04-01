@@ -11,7 +11,9 @@ interface FormData {
   phone: string
   email: string
   experience: string
+  profession: string
   whyTrain: string
+  whatYouBring: string
   developGoals: string[]
   commitToTraining: string
   acceptChallenge: string
@@ -24,7 +26,9 @@ const INITIAL: FormData = {
   phone: '',
   email: '',
   experience: '',
+  profession: '',
   whyTrain: '',
+  whatYouBring: '',
   developGoals: [],
   commitToTraining: '',
   acceptChallenge: '',
@@ -32,24 +36,24 @@ const INITIAL: FormData = {
   understandCommunity: '',
 }
 
-const GOALS = ['Structure', 'Discipline', 'Self Defense', 'Personal Growth']
+const GOALS = ['Structure', 'Discipline', 'Brotherhood', 'Leadership', 'Physical Mastery', 'Personal Growth']
 
 const QUALIFIERS: { field: keyof FormData; question: string }[] = [
   {
     field: 'commitToTraining',
-    question: 'Are you willing to commit to consistent training and correction?',
+    question: 'This brotherhood demands consistent presence and full commitment — not when convenient, but as a standard. Are you in a place in your life where you can honor that?',
   },
   {
     field: 'acceptChallenge',
-    question: 'Are you ready to be challenged and held accountable?',
+    question: 'You will be corrected. Your assumptions will be challenged. The men around you will hold you to a standard. Are you ready to be led before you lead?',
   },
   {
     field: 'willTravel',
-    question: 'Are you willing to travel consistently for training if required?',
+    question: 'Are you willing to travel to train if required?',
   },
   {
     field: 'understandCommunity',
-    question: 'Training here is built around a group of dedicated practitioners. Are you looking to be part of that, not just receive individual instruction?',
+    question: 'The men who enter this brotherhood are selected for the value they bring — not just what they seek. Do you understand that your role here is as much about contribution as it is about development?',
   },
 ]
 
@@ -85,7 +89,9 @@ export default function Application() {
     if (!form.phone.trim()) e.phone = 'Phone is required.'
     if (!form.email.trim()) e.email = 'Email is required.'
     if (!form.experience) e.experience = 'Please select your experience level.'
-    if (!form.whyTrain.trim()) e.whyTrain = 'Please tell us why you want to train.'
+    if (!form.profession.trim()) e.profession = 'Please tell us what you do and what you are building.'
+    if (!form.whyTrain.trim()) e.whyTrain = 'Please answer this question.'
+    if (!form.whatYouBring.trim()) e.whatYouBring = 'Please answer this question.'
     if (!form.commitToTraining) e.commitToTraining = 'Please answer this question.'
     if (!form.acceptChallenge) e.acceptChallenge = 'Please answer this question.'
     if (!form.willTravel) e.willTravel = 'Please answer this question.'
@@ -197,7 +203,7 @@ export default function Application() {
         ) : (
           /* ── Form ───────────────────────────────────────────────────────── */
           <form onSubmit={handleSubmit} className="space-y-12" noValidate>
-            <h3 className="font-serif text-2xl text-bone">Apply for Training</h3>
+            <h3 className="font-serif text-2xl text-bone">Request Entry</h3>
 
             {/* ── Basic fields ───────────────────────────────────────────── */}
             <div className="space-y-6">
@@ -263,15 +269,39 @@ export default function Application() {
               </div>
 
               <div>
-                <label className="label block mb-3">Why do you want to train?</label>
+                <label className="label block mb-3">What do you do, and what are you currently building?</label>
+                <textarea
+                  rows={4}
+                  value={form.profession}
+                  onChange={e => set('profession', e.target.value)}
+                  className={`field resize-none ${errors.profession ? '!border-gold/60' : ''}`}
+                  placeholder="Your profession, business, or endeavor. Be specific."
+                />
+                {errors.profession && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.profession}</p>}
+              </div>
+
+              <div>
+                <label className="label block mb-3">Why do you want to enter this brotherhood?</label>
                 <textarea
                   rows={5}
                   value={form.whyTrain}
                   onChange={e => set('whyTrain', e.target.value)}
                   className={`field resize-none ${errors.whyTrain ? '!border-gold/60' : ''}`}
-                  placeholder="Be specific."
+                  placeholder="Be specific. Not what you want to learn — why this, why now."
                 />
                 {errors.whyTrain && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.whyTrain}</p>}
+              </div>
+
+              <div>
+                <label className="label block mb-3">What do you bring to a group of men at this level?</label>
+                <textarea
+                  rows={5}
+                  value={form.whatYouBring}
+                  onChange={e => set('whatYouBring', e.target.value)}
+                  className={`field resize-none ${errors.whatYouBring ? '!border-gold/60' : ''}`}
+                  placeholder="Skills, disciplines, experience, perspective. What makes you an asset to the men around you?"
+                />
+                {errors.whatYouBring && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.whatYouBring}</p>}
               </div>
             </div>
 

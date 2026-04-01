@@ -13,16 +13,16 @@ const stagger = {
 
 const lines = [
   {
-    primary: 'You have seen techniques.',
-    secondary: 'But never understood structure.',
+    primary: 'You have built things.',
+    secondary: 'But the men around you cannot meet you where you are.',
   },
   {
-    primary: 'You know you are capable of more.',
-    secondary: 'But no one has shown you how to develop it.',
+    primary: 'You have discipline.',
+    secondary: 'But you are doing it alone — surrounded by people who admire you but cannot challenge you.',
   },
   {
-    primary: null,
-    secondary: 'And you have not yet found the structure to build it.',
+    primary: 'You have achieved.',
+    secondary: 'But something is still hollow. Not from failure. From the absence of men who match your depth.',
   },
 ]
 
@@ -41,14 +41,14 @@ export default function Recognition() {
         </motion.p>
 
         <motion.h2 variants={fadeUp} className="heading-lg mb-12">
-          You have trained.
+          You have done the work.
         </motion.h2>
 
         <motion.p
           variants={fadeUp}
           className="font-serif text-xl md:text-2xl text-bone/65 italic mb-20"
         >
-          But something has always been missing.
+          But something is still missing.
         </motion.p>
 
         <motion.div variants={stagger} className="space-y-10">

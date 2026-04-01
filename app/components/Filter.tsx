@@ -12,15 +12,19 @@ const stagger = {
 }
 
 const notForYou = [
-  'You are looking for casual training.',
-  'You want quick results without discipline.',
-  'You avoid correction.',
+  'You are financially unstable or between commitments.',
+  'You are looking for martial arts classes or technique-based instruction.',
+  'You bring unresolved instability, bad energy, or the need to negotiate every correction.',
+  'You want to receive but are unwilling to contribute to the men around you.',
+  'You are looking for a group to fix what you have not yet addressed yourself.',
 ]
 
 const forYou = [
-  'You value structure over shortcuts.',
-  'You are willing to be challenged.',
-  'You are ready to commit to real development.',
+  'You have built something real — a business, a discipline, a standard — and you are ready to go deeper.',
+  'You are tired of being the most capable man in every room with no one to match you.',
+  'You understand that what you bring to this group matters as much as what you gain.',
+  'You can be led, and you can lead — and you know the difference.',
+  'You are ready to enter a lineage, not attend a program.',
 ]
 
 export default function Filter() {

@@ -105,7 +105,7 @@ export default function Hero() {
             transition={{ duration: 0.9, ease: 'easeOut' }}
           >
             <button onClick={scrollToForm} className="btn">
-              Apply for Training
+              Request Entry
             </button>
           </motion.div>
         </motion.div>
