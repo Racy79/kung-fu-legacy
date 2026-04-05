@@ -105,7 +105,7 @@ export default function Experience() {
           <img
             src="/images/40258FD4-D377-4396-8635-0D11A9EC97E5.jpeg"
             alt="Wing Chun training"
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            className="absolute inset-0 w-full h-full object-cover object-top"
           />
         </motion.div>
       </motion.div>
