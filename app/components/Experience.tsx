@@ -97,14 +97,16 @@ export default function Experience() {
           </p>
         </motion.div>
 
-        {/* ── Training Image Placeholder 2 ──────────────────────────────────── */}
+        {/* ── Training Image ──────────────────────────────────── */}
         <motion.div
           variants={fadeUp}
           className="relative h-72 md:h-[420px] overflow-hidden mt-20 group"
         >
-          <div className="absolute inset-0 bg-espresso/50 border border-bone/8 flex items-center justify-center">
-            <p className="label opacity-30">Training Photo — Drills</p>
-          </div>
+          <img
+            src="/images/40258FD4-D377-4396-8635-0D11A9EC97E5.jpeg"
+            alt="Wing Chun training"
+            className="absolute inset-0 w-full h-full object-cover object-center"
+          />
         </motion.div>
       </motion.div>
     </section>
