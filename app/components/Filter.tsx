@@ -12,19 +12,19 @@ const stagger = {
 }
 
 const notForYou = [
-  'You are financially unstable or between commitments.',
-  'You are looking for martial arts classes or technique-based instruction.',
-  'You bring unresolved instability, bad energy, or the need to negotiate every correction.',
-  'You want to receive but are unwilling to contribute to the men around you.',
-  'You are looking for a group to fix what you have not yet addressed yourself.',
+  'You are between stable commitments or looking for something to try.',
+  'You want technique. This is not technique-based instruction.',
+  'You are not ready to be corrected without resistance.',
+  'You want to take from this room more than you give.',
+  'You are looking for something external to address what you have not yet faced yourself.',
 ]
 
 const forYou = [
-  'You have built something real — a business, a discipline, a standard — and you are ready to go deeper.',
-  'You are tired of being the most capable man in every room with no one to match you.',
-  'You understand that what you bring to this group matters as much as what you gain.',
-  'You can be led, and you can lead — and you know the difference.',
-  'You are ready to enter a lineage, not attend a program.',
+  'You have built something real and you are ready to go deeper than you can go alone.',
+  'You are the most capable man in most rooms — and that has started to feel like a ceiling.',
+  'You understand that what you bring matters as much as what you gain.',
+  'You can be led. You can lead. And you know when to do each.',
+  'You are ready to enter a lineage — not attend a program.',
 ]
 
 export default function Filter() {

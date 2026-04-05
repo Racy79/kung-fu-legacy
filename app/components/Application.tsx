@@ -155,15 +155,15 @@ export default function Application() {
         </motion.p>
 
         <motion.h2 variants={fadeUp} className="heading-lg mb-8">
-          Entry is limited.
+          Entry is not given.
         </motion.h2>
 
         <motion.div variants={stagger} className="space-y-3 mb-8">
           <motion.p variants={fadeUp} className="body text-bone/65">
-            Not because of space.
+            It is earned.
           </motion.p>
           <motion.p variants={fadeUp} className="body text-bone/65">
-            Because of standard.
+            It is granted by the men already inside it.
           </motion.p>
         </motion.div>
 
@@ -171,12 +171,12 @@ export default function Application() {
           variants={fadeUp}
           className="font-serif text-xl text-bone/75 italic mb-10"
         >
-          This requires commitment.<br />
-          But it gives you what casual training never will.
+          What you are committing to is not a training schedule.<br />
+          It is a standard.
         </motion.p>
 
         <motion.p variants={fadeUp} className="body text-bone/55 mb-16">
-          If this speaks to you, apply below.
+          Applications are reviewed. Entry is not guaranteed. If you are the right man, you will know it before you submit.
         </motion.p>
 
         <motion.div variants={fadeUp} className="gold-line mb-16" />
@@ -405,7 +405,7 @@ export default function Application() {
                 disabled={status === 'submitting'}
                 className="btn w-full sm:w-auto"
               >
-                {status === 'submitting' ? 'Submitting...' : 'Submit Application'}
+                {status === 'submitting' ? 'Submitting...' : 'Request Entry'}
               </button>
             </div>
           </form>

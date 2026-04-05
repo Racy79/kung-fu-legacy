@@ -1,5 +1,6 @@
 import Hero from './components/Hero'
 import Recognition from './components/Recognition'
+import TheRoom from './components/TheRoom'
 import Shift from './components/Shift'
 import AnchorQuote from './components/AnchorQuote'
 import Legacy from './components/Legacy'
@@ -15,6 +16,7 @@ export default function Home() {
     <main>
       <Hero />
       <Recognition />
+      <TheRoom />
       <Shift />
       <AnchorQuote />
       <Legacy />

@@ -43,6 +43,9 @@ export default function Recognition() {
           <motion.p variants={fadeUp} className="body text-bone/70">
             That kind of brotherhood does not happen by accident. It is built through shared practice, shared pressure, and time. It has a structure. It has a lineage. It asks something real from the men inside it.
           </motion.p>
+          <motion.p variants={fadeUp} className="body text-bone/70">
+            You have been patient with the absence. You have worked around it. You have filled the space with output, with achievement, with forward motion. But you feel it.
+          </motion.p>
           <motion.p variants={fadeUp} className="font-serif text-xl md:text-2xl text-gold italic">
             Most men stop looking for it. They settle. You are still looking. That is why you are here.
           </motion.p>

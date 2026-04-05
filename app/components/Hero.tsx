@@ -93,7 +93,7 @@ export default function Hero() {
               Not structure. Not discipline. You have both.
             </p>
             <p className="body max-w-sm">
-              What you have not found is men who carry the same weight you do.
+              What you have not found is the men who carry the same weight.
             </p>
           </motion.div>
 
