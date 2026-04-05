@@ -11,20 +11,6 @@ const stagger = {
   show: { transition: { staggerChildren: 0.18 } },
 }
 
-const lines = [
-  {
-    primary: 'You have built things.',
-    secondary: 'But the men around you cannot meet you where you are.',
-  },
-  {
-    primary: 'You have discipline.',
-    secondary: 'But you are doing it alone — surrounded by people who admire you but cannot challenge you.',
-  },
-  {
-    primary: 'You have achieved.',
-    secondary: 'But something is still hollow. Not from failure. From the absence of men who match your depth.',
-  },
-]
 
 export default function Recognition() {
   return (
@@ -41,29 +27,25 @@ export default function Recognition() {
         </motion.p>
 
         <motion.h2 variants={fadeUp} className="heading-lg mb-12">
-          You have done the work.
+          You are not here because something is broken.
         </motion.h2>
 
-        <motion.p
-          variants={fadeUp}
-          className="font-serif text-xl md:text-2xl text-bone/65 italic mb-20"
-        >
-          But something is still missing.
-        </motion.p>
-
-        <motion.div variants={stagger} className="space-y-10">
-          {lines.map(({ primary, secondary }, i) => (
-            <motion.div
-              key={i}
-              variants={fadeUp}
-              className="border-l border-gold/25 pl-8"
-            >
-              {primary && (
-                <p className="body mb-2 text-bone/80">{primary}</p>
-              )}
-              <p className="body text-bone/55">{secondary}</p>
-            </motion.div>
-          ))}
+        <motion.div variants={stagger} className="space-y-8">
+          <motion.p variants={fadeUp} className="body text-bone/70">
+            You have built something real. You show up. You hold the standard. You have been doing this long enough that most of the people around you have become background. They respect you. Some admire you. They defer to you in the room.
+          </motion.p>
+          <motion.p variants={fadeUp} className="font-serif text-xl md:text-2xl text-bone italic">
+            None of them can actually challenge you.
+          </motion.p>
+          <motion.p variants={fadeUp} className="body text-bone/70">
+            That is the absence you have been feeling. Not a gap in your training. Not a need for more structure. A room that has been empty for a long time. Men who are operating at the level you are. Who will tell you the truth. Who carry enough themselves to have earned the right to say it.
+          </motion.p>
+          <motion.p variants={fadeUp} className="body text-bone/70">
+            That kind of brotherhood does not happen by accident. It is built through shared practice, shared pressure, and time. It has a structure. It has a lineage. It asks something real from the men inside it.
+          </motion.p>
+          <motion.p variants={fadeUp} className="font-serif text-xl md:text-2xl text-gold italic">
+            Most men stop looking for it. They settle. You are still looking. That is why you are here.
+          </motion.p>
         </motion.div>
       </motion.div>
     </section>

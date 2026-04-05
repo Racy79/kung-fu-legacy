@@ -73,7 +73,7 @@ export default function Hero() {
             transition={{ duration: 0.9, ease: 'easeOut' }}
             className="font-serif text-xl md:text-2xl text-bone/80 italic mb-10"
           >
-            Build the structure that carries you.
+            You already know what is missing.
           </motion.p>
 
           {/* Divider */}
@@ -90,12 +90,10 @@ export default function Hero() {
             className="space-y-5 mb-14"
           >
             <p className="body max-w-sm">
-              Kung Fu is not something you attend.<br />
-              It is something you inherit, refine, and embody.
+              Not structure. Not discipline. You have both.
             </p>
             <p className="body max-w-sm">
-              For those seeking discipline, clarity, and real development,
-              this is where it begins.
+              What you have not found is men who carry the same weight you do.
             </p>
           </motion.div>
 
