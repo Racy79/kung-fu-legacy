@@ -87,7 +87,7 @@ export default function Integration() {
             quality={100}
             className="object-cover object-center"
           />
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-black/10" />
         </motion.div>
       </motion.div>
     </section>
