@@ -4,6 +4,7 @@ import './globals.css'
 import Analytics from './components/Analytics'
 import ScrollTracker from './components/ScrollTracker'
 import ScrollToTop from './components/ScrollToTop'
+import Navbar from './components/Navbar'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -87,6 +88,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Analytics />
         <ScrollTracker />
         <ScrollToTop />
+        <Navbar />
         {children}
       </body>
     </html>

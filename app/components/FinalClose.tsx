@@ -6,7 +6,11 @@ import { trackApplyClick } from '../lib/analytics'
 export default function FinalClose() {
   const scrollToForm = () => {
     trackApplyClick()
-    document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })
+    const el = document.getElementById('apply-form')
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY - 100
+      window.scrollTo({ top, behavior: 'smooth' })
+    }
   }
 
   return (
@@ -30,15 +34,6 @@ export default function FinalClose() {
         <button onClick={scrollToForm} className="btn">
           Request Entry
         </button>
-
-        <div className="w-px h-16 bg-gold/25 mx-auto mt-20 mb-14" />
-
-        <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-bone/25">
-          Kung Fu Legacy — Converse, Texas
-        </p>
-        <p className="font-sans text-xs text-bone/15 mt-3">
-          &copy; {new Date().getFullYear()} Rafael Gonzalez. All rights reserved.
-        </p>
       </motion.div>
     </section>
   )

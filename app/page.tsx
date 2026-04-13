@@ -10,6 +10,7 @@ import Experience from './components/Experience'
 import Integration from './components/Integration'
 import Application from './components/Application'
 import FinalClose from './components/FinalClose'
+import Footer from './components/Footer'
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Integration />
       <Application />
       <FinalClose />
+      <Footer />
     </main>
   )
 }

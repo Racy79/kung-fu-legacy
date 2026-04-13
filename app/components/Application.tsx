@@ -141,7 +141,7 @@ export default function Application() {
   }
 
   return (
-    <section id="apply" className="section-pad bg-matte-black scroll-mt-8">
+    <section id="apply" className="section-pad bg-matte-black scroll-mt-24">
       <motion.div
         className="max-w-2xl mx-auto"
         variants={stagger}
@@ -202,7 +202,7 @@ export default function Application() {
           </motion.div>
         ) : (
           /* ── Form ───────────────────────────────────────────────────────── */
-          <form onSubmit={handleSubmit} className="space-y-12" noValidate>
+          <form id="apply-form" onSubmit={handleSubmit} className="space-y-12 scroll-mt-28" noValidate>
             <h3 className="font-serif text-2xl text-bone">Request Entry</h3>
 
             {/* ── Basic fields ───────────────────────────────────────────── */}
