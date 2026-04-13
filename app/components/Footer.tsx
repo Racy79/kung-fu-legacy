@@ -18,7 +18,8 @@ export default function Footer() {
         <img
           src="/images/logo.png"
           alt="Kung Fu Legacy"
-          className="w-[96px] h-[96px] md:w-[120px] md:h-[120px] mb-10"
+          className="w-[160px] h-[160px] md:w-[200px] md:h-[200px] mb-10"
+          style={{ mixBlendMode: 'screen' }}
         />
 
         {/* Lineage */}
