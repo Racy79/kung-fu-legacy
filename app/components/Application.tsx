@@ -196,8 +196,15 @@ export default function Application() {
             <h3 className="font-serif text-2xl md:text-3xl text-bone mb-8">
               Application received.
             </h3>
-            <p className="body text-bone/65 mb-2">Applications are reviewed.</p>
-            <p className="body text-bone/65">If accepted, you will be contacted.</p>
+            <p className="body text-bone/65 mb-6">
+              Your application will be reviewed by Rafael personally.
+            </p>
+            <p className="body text-bone/65 mb-6">
+              If it advances, you will receive a direct call — not an email, not an automated message. Rafael will reach out within a few days.
+            </p>
+            <p className="font-serif text-lg text-bone/80 italic">
+              Sit with what you wrote. It will be the first thing you are asked about.
+            </p>
             <div className="w-px h-10 bg-gold/40 mx-auto mt-10" />
           </motion.div>
         ) : (
