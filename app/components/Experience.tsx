@@ -97,6 +97,25 @@ export default function Experience() {
           </p>
         </motion.div>
 
+        {/* What you train */}
+        <motion.div variants={fadeUp} className="mt-20 pt-16 border-t border-bone/[0.06]">
+          <p className="label mb-12">What you train</p>
+          <div className="space-y-0 divide-y divide-bone/[0.06]">
+            {[
+              { name: 'Siu Lim Tao', description: 'The first form. Structure, root, and the economy of motion.' },
+              { name: 'Chum Kiu', description: 'Bridging and footwork. How to enter, turn, and control space.' },
+              { name: 'Biu Jee', description: 'Emergency techniques and extreme-angle striking.' },
+              { name: 'Chi Sao', description: 'Sticky hands. Sensitivity, reflexes, and live application — the core of Wing Chun sparring.' },
+              { name: 'Muk Yan Jong', description: 'The wooden dummy. Angles, combinations, and contact conditioning.' },
+            ].map(({ name, description }) => (
+              <div key={name} className="py-6 flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-8">
+                <p className="font-serif text-lg text-bone flex-shrink-0 sm:w-44">{name}</p>
+                <p className="font-sans text-sm text-bone/45 leading-relaxed">{description}</p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
         {/* ── Training Image ──────────────────────────────────── */}
         <motion.div
           variants={fadeUp}

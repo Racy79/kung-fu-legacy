@@ -347,7 +347,7 @@ export default function Application() {
                   <p className="font-sans text-sm text-bone/65 leading-relaxed mb-5">
                     {question}
                   </p>
-                  <div className="flex gap-8">
+                  <div className="flex gap-4">
                     {['Yes', 'No'].map(opt => {
                       const val = opt.toLowerCase()
                       const checked = form[field] === val
@@ -356,8 +356,11 @@ export default function Application() {
                           key={opt}
                           className={`
                             flex items-center gap-3 cursor-pointer font-sans text-sm
-                            transition-colors duration-300
-                            ${checked ? 'text-gold' : 'text-bone/45 hover:text-bone/70'}
+                            min-h-[48px] px-4 border transition-all duration-300
+                            ${checked
+                              ? 'text-gold border-gold/40 bg-gold/5'
+                              : 'text-bone/45 border-bone/10 hover:border-bone/25 hover:text-bone/70'
+                            }
                           `}
                         >
                           <input
