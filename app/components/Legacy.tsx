@@ -100,6 +100,11 @@ export default function Legacy() {
           ))}
         </motion.div>
 
+        {/* ── Capacity ──────────────────────────────────────────────────────── */}
+        <motion.p variants={fadeUp} className="body text-bone/55 mb-20">
+          This brotherhood holds a maximum of fifteen men.
+        </motion.p>
+
         {/* ── Training Image ─────────────────────────────────────────────────── */}
         <motion.div
           variants={fadeUp}
