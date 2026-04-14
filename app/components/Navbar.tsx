@@ -50,7 +50,6 @@ export default function Navbar() {
             src="/images/logo.png"
             alt="Kung Fu Legacy seal"
             className="w-14 h-14 md:w-16 md:h-16 object-cover object-top"
-            style={{ mixBlendMode: 'screen' }}
           />
         </button>
 
