@@ -15,7 +15,11 @@ const stagger = {
 export default function Hero() {
   const scrollToForm = () => {
     trackApplyClick()
-    document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })
+    const el = document.getElementById('apply-form')
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY - 100
+      window.scrollTo({ top, behavior: 'smooth' })
+    }
   }
 
   return (

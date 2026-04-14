@@ -29,7 +29,7 @@ export default function TheRoom() {
           You will know the moment you walk in.
         </motion.h2>
 
-        <motion.div variants={stagger} className="space-y-8">
+        <motion.div variants={stagger} className="space-y-8 mb-20">
           <motion.p variants={fadeUp} className="body text-bone/70">
             This is not a class. It is not an open session. There is no drop-in.
           </motion.p>
@@ -46,6 +46,61 @@ export default function TheRoom() {
             That is what has been missing.
           </motion.p>
         </motion.div>
+
+        {/* ── The Space ─────────────────────────────────────────────────────── */}
+        {/* Wide shot */}
+        <motion.div
+          variants={fadeUp}
+          className="relative overflow-hidden mb-3"
+          style={{ aspectRatio: '16/9' }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/IMG_3762.jpeg"
+            alt="Kung Fu Legacy training hall — Converse, Texas"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-black/35" />
+        </motion.div>
+
+        {/* Detail grid */}
+        <motion.div variants={stagger} className="grid grid-cols-2 gap-3">
+          <motion.div
+            variants={fadeUp}
+            className="relative overflow-hidden"
+            style={{ aspectRatio: '3/4' }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/IMG_3763.jpeg"
+              alt="Muk Yan Jong — wooden dummy"
+              className="w-full h-full object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-black/30" />
+          </motion.div>
+
+          <motion.div
+            variants={fadeUp}
+            className="relative overflow-hidden"
+            style={{ aspectRatio: '3/4' }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/IMG_3766.jpeg"
+              alt="Lineage altar — Kung Fu Legacy"
+              className="w-full h-full object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-black/30" />
+          </motion.div>
+        </motion.div>
+
+        <motion.p
+          variants={fadeUp}
+          className="font-sans text-[9px] tracking-[0.25em] uppercase text-bone/20 mt-5 text-center"
+        >
+          Converse, Texas
+        </motion.p>
+
       </motion.div>
     </section>
   )
