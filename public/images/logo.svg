@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+
+  <!-- Kung Fu Legacy — Geometric Plum Blossom Seal -->
+  <!-- True vector, transparent background, gold elements only -->
+  <!-- Ring center: (500,430) — blossom center: (500,430) — petal arm: 130px -->
+
+  <g fill="#C6A962">
+
+    <!-- Seal ring — donut via fill-rule evenodd -->
+    <!-- Outer circle r=220, inner circle r=214, both centered at (500,430) -->
+    <path d="M500,210 A220,220 0 1,1 499.9,210 Z
+             M500,216 A214,214 0 1,0 500.1,216 Z"
+          fill-rule="evenodd"/>
+
+    <!-- Petal 1 — 270° (12 o'clock), tip at (500, 300) -->
+    <path d="M500,430 A130,130 0 0,1 500,300 A130,130 0 0,1 500,430 Z"/>
+
+    <!-- Petal 2 — 342° (top-right), tip at (624, 390) -->
+    <path d="M500,430 A130,130 0 0,1 624,390 A130,130 0 0,1 500,430 Z"/>
+
+    <!-- Petal 3 — 54° (bottom-right), tip at (576, 535) -->
+    <path d="M500,430 A130,130 0 0,1 576,535 A130,130 0 0,1 500,430 Z"/>
+
+    <!-- Petal 4 — 126° (bottom-left), tip at (424, 535) -->
+    <path d="M500,430 A130,130 0 0,1 424,535 A130,130 0 0,1 500,430 Z"/>
+
+    <!-- Petal 5 — 198° (top-left), tip at (376, 390) -->
+    <path d="M500,430 A130,130 0 0,1 376,390 A130,130 0 0,1 500,430 Z"/>
+
+    <!-- Center circle -->
+    <circle cx="500" cy="430" r="18"/>
+
+  </g>
+
+  <!-- Wordmark — below the ring (ring bottom: y=650) -->
+  <text
+    x="500"
+    y="740"
+    text-anchor="middle"
+    font-family="Cormorant Garamond, Garamond, Georgia, serif"
+    font-size="42"
+    font-variant="small-caps"
+    letter-spacing="14"
+    fill="#C6A962"
+  >KUNG FU LEGACY</text>
+
+</svg>

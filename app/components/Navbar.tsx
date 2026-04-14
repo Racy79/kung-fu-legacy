@@ -47,10 +47,9 @@ export default function Navbar() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/logo.png"
+            src="/images/logo.svg"
             alt="Kung Fu Legacy seal"
-            className="w-14 h-14 md:w-16 md:h-16 object-cover object-top"
-            style={{ mixBlendMode: 'screen' }}
+            className="w-14 h-14 md:w-16 md:h-16"
           />
         </button>
 

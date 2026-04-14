@@ -16,10 +16,9 @@ export default function Footer() {
         {/* Full logo — ceremonial mark */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/logo.png"
+          src="/images/logo.svg"
           alt="Kung Fu Legacy"
           className="w-[160px] h-[160px] md:w-[200px] md:h-[200px] mb-10"
-          style={{ mixBlendMode: 'screen' }}
         />
 
         {/* Lineage */}
