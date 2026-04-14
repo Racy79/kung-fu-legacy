@@ -34,6 +34,21 @@ export default function Voice() {
           From the Instructor
         </motion.p>
 
+        {/* Portrait */}
+        <motion.div variants={fadeUp} className="flex flex-col items-center mb-14">
+          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border border-gold/25">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/unnamed.png"
+              alt="Rafael Gonzalez — Sifu, Kung Fu Legacy"
+              className="w-full h-full object-cover object-top"
+            />
+          </div>
+          <p className="font-sans text-[9px] tracking-[0.28em] uppercase text-bone/30 mt-4">
+            Rafael Gonzalez &nbsp;·&nbsp; Sifu
+          </p>
+        </motion.div>
+
         <div className="w-px h-12 bg-gold/30 mb-14" />
 
         <motion.div variants={stagger} className="space-y-8">
@@ -62,13 +77,6 @@ export default function Voice() {
         </motion.p>
 
         <div className="w-px h-12 bg-gold/30 mt-14" />
-
-        <motion.p
-          variants={fadeUp}
-          className="font-sans text-[10px] tracking-[0.3em] uppercase text-bone/30 mt-8"
-        >
-          Rafael Gonzalez — Sifu
-        </motion.p>
       </motion.div>
     </section>
   )
