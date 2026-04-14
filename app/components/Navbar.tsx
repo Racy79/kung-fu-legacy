@@ -47,7 +47,7 @@ export default function Navbar() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/logo.svg"
+            src="/images/logo-transparent.png"
             alt="Kung Fu Legacy seal"
             className="w-14 h-14 md:w-16 md:h-16"
           />
