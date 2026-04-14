@@ -5,6 +5,7 @@ import Shift from './components/Shift'
 import AnchorQuote from './components/AnchorQuote'
 import Legacy from './components/Legacy'
 import Voice from './components/Voice'
+import Testimonials from './components/Testimonials'
 import Filter from './components/Filter'
 import Experience from './components/Experience'
 import Integration from './components/Integration'
@@ -22,6 +23,7 @@ export default function Home() {
       <AnchorQuote />
       <Legacy />
       <Voice />
+      <Testimonials />
       <Filter />
       <Experience />
       <Integration />
