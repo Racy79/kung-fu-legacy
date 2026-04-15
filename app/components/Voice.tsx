@@ -14,7 +14,7 @@ const stagger = {
 const lines = [
   'I am not building a school. I am building a brotherhood.',
   'What I carry was passed to me through a direct line from Ip Man — through Moy Yat, through my teacher Moy Don. That transmission does not go to everyone. It goes to the men who are ready to receive it and carry it forward.',
-  'This system is not philosophy. I have spent three decades in this lineage and watched what it builds in the men who enter it seriously.',
+  'This system is not philosophy. I have spent three decades in the art and watched how serious training shapes the men who commit to it.',
   'What you enter here is not a program. It is a circle of men — selected, not collected. Men who are building something in their lives, who understand that iron sharpens iron, and who are ready to be held to a standard by the men beside them.',
   'A living lineage — three decades of refinement — and the men who carry it beside you.',
   'If that is what you are looking for, request entry.',
