@@ -2,8 +2,6 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { trackApplyClick } from '../lib/analytics'
-
 const fadeUp = { hidden: { opacity: 0, y: 28 }, show: { opacity: 1, y: 0 } }
 
 const stagger = {
@@ -13,15 +11,6 @@ const stagger = {
 }
 
 export default function Hero() {
-  const scrollToForm = () => {
-    trackApplyClick()
-    const el = document.getElementById('apply-form')
-    if (el) {
-      const top = el.getBoundingClientRect().top + window.scrollY - 100
-      window.scrollTo({ top, behavior: 'smooth' })
-    }
-  }
-
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
 
@@ -81,7 +70,7 @@ export default function Hero() {
           <motion.div
             variants={fadeUp}
             transition={{ duration: 0.9, ease: 'easeOut' }}
-            className="space-y-5 mb-14"
+            className="space-y-5"
           >
             <p className="body max-w-sm">
               Not structure. Not discipline. You have both.
@@ -89,16 +78,6 @@ export default function Hero() {
             <p className="body max-w-sm">
               What you have not found is the men who carry the same weight.
             </p>
-          </motion.div>
-
-          {/* CTA */}
-          <motion.div
-            variants={fadeUp}
-            transition={{ duration: 0.9, ease: 'easeOut' }}
-          >
-            <button onClick={scrollToForm} className="btn">
-              Request Entry
-            </button>
           </motion.div>
         </motion.div>
       </div>
