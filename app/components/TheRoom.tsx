@@ -55,9 +55,9 @@ export default function TheRoom() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/40258FD4-D377-4396-8635-0D11A9EC97E5.jpeg"
-            alt="Wing Chun technique — Kung Fu Legacy"
-            className="w-full h-full object-cover object-[40%_25%]"
+            src="/images/IMG_3853.png"
+            alt="Wing Chun wooden dummy — Kung Fu Legacy"
+            className="w-full h-full object-cover object-[center_20%]"
           />
           <div className="absolute inset-0 bg-black/15" />
         </motion.div>
