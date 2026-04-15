@@ -47,59 +47,20 @@ export default function TheRoom() {
           </motion.p>
         </motion.div>
 
-        {/* ── The Space ─────────────────────────────────────────────────────── */}
-        {/* Wide shot */}
+        {/* ── The Brotherhood ───────────────────────────────────────────────── */}
         <motion.div
           variants={fadeUp}
-          className="relative overflow-hidden mb-3"
+          className="relative overflow-hidden"
           style={{ aspectRatio: '16/9' }}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/IMG_3762.jpeg"
-            alt="Kung Fu Legacy training hall — Converse, Texas"
+            src="/images/image.jpg"
+            alt="Kung Fu Legacy — the brotherhood"
             className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-black/35" />
+          <div className="absolute inset-0 bg-black/20" />
         </motion.div>
-
-        {/* Detail grid */}
-        <motion.div variants={stagger} className="grid grid-cols-2 gap-3">
-          <motion.div
-            variants={fadeUp}
-            className="relative overflow-hidden"
-            style={{ aspectRatio: '3/4' }}
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/IMG_3763.jpeg"
-              alt="Muk Yan Jong — wooden dummy"
-              className="w-full h-full object-cover object-center"
-            />
-            <div className="absolute inset-0 bg-black/30" />
-          </motion.div>
-
-          <motion.div
-            variants={fadeUp}
-            className="relative overflow-hidden"
-            style={{ aspectRatio: '3/4' }}
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/IMG_3766.jpeg"
-              alt="Lineage altar — Kung Fu Legacy"
-              className="w-full h-full object-cover object-center"
-            />
-            <div className="absolute inset-0 bg-black/30" />
-          </motion.div>
-        </motion.div>
-
-        <motion.p
-          variants={fadeUp}
-          className="font-sans text-[9px] tracking-[0.25em] uppercase text-bone/20 mt-5 text-center"
-        >
-          Converse, Texas
-        </motion.p>
 
       </motion.div>
     </section>

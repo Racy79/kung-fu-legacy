@@ -41,7 +41,7 @@ export default function Voice() {
             <img
               src="/images/hero.jpg"
               alt="Rafael Gonzalez — Sifu, Kung Fu Legacy"
-              className="w-full h-full object-cover object-[center_20%]"
+              className="w-full h-full object-cover object-[60%_20%]"
             />
           </div>
           <p className="font-sans text-[9px] tracking-[0.28em] uppercase text-bone/30 mt-4">
