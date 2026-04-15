@@ -1,0 +1,75 @@
+{
+  "name": "Kung Fu Legacy — Application Form",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "kung-fu-legacy-apply",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "{\"ok\":true}",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      },
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [660, 300]
+    },
+    {
+      "parameters": {
+        "fromEmail": "rafaelgonzalezrosado@gmail.com",
+        "toEmail": "rafaelgonzalezrosado@gmail.com",
+        "subject": "New Training Application — Kung Fu Legacy",
+        "emailType": "html",
+        "message": "<h2>New Training Application</h2><p><strong>Name:</strong> {{$json.body.fullName}}</p><p><strong>Phone:</strong> {{$json.body.phone}}</p><p><strong>Email:</strong> {{$json.body.email}}</p><p><strong>Experience:</strong> {{$json.body.experience}}</p><p><strong>Why they want to train:</strong><br>{{$json.body.whyTrain}}</p><p><strong>Goals:</strong> {{$json.body.developGoals}}</p><p><strong>Commits to training:</strong> {{$json.body.commitToTraining}}</p><p><strong>Accepts challenge:</strong> {{$json.body.acceptChallenge}}</p><p><strong>Will travel:</strong> {{$json.body.willTravel}}</p>",
+        "options": {}
+      },
+      "name": "Send Email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2,
+      "position": [460, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Send Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Email": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

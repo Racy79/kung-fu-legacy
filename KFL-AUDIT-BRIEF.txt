@@ -1,0 +1,442 @@
+KUNG FU LEGACY — FULL WEBSITE AUDIT BRIEF
+For ChatGPT — April 14, 2026
+Live site: https://thekungfulegacy.com
+
+==========================================
+SECTION 1: PROJECT CONTEXT
+==========================================
+
+WHAT IT IS
+----------
+Kung Fu Legacy is a selective-entry Wing Chun brotherhood and internal school.
+NOT a gym. NOT a coaching program. NOT a class-based martial arts school.
+Closest analogues: Freemasonry, a fraternal order, a guild.
+Wing Chun is the discipline structure that binds the brotherhood together.
+3-year goal: a small group of structured, reliable men who embody the system —
+some prepared to carry the lineage forward.
+
+LINEAGE
+-------
+Yip Man → Moy Yat → Moy Don (Thornton Williams) → Rafael Gonzalez (Moy Don Xùn)
+Structure name: Moy Yat Moy Don Ving Tsun Special Student Association
+
+THE MODEL
+---------
+- 1-on-1 weekly or bi-weekly mentorship + weekly group session
+- Maximum 10–20 men at a time (site says maximum fifteen)
+- Progression-based: Siu Nim Tau → Chum Kiu → Biu Jee → Muk Yan Jong → Long Pole → Double Knives
+- Hong bao (offering) at each progression milestone:
+    Siu Nim Tau: $100 / Chum Kiu: $200 / Biu Jee: $300
+    Muk Yan Jong: $400 / Long Pole: $500 / Double Knives: $600
+    Total progression path: $2,100
+- Bai Si ceremony (indoor disciple initiation): $3,000
+    Earned through trust, not purchasable. Rafael decides, not the student.
+- Monthly membership: $1,000–$1,500 (Texas) / $400–$800 (Puerto Rico)
+- Locations: Converse, TX (primary) + San Juan, Puerto Rico
+
+THE IDEAL MEMBER
+----------------
+NOT broken men. NOT martial arts hobbyists.
+
+Who he is:
+- Deep, profound, serious thinker
+- Already capable and smart — seeks elevation, not rescue
+- Hungry for real brotherhood with men of the same caliber
+- Passionate about kung fu, fitness, nutrition, business, entrepreneurship
+- Willing to contribute his skills to the collective good
+- The kind of man you trust with your back
+
+What he wants:
+- Brotherhood, not a program
+- Men who pull each other up
+- A structured path with real depth: initiation, progression, belonging, shared mission
+
+Disqualifiers:
+- Bad energy
+- Resistance to structure
+- Unwilling to contribute to the collective
+
+COPY PRINCIPLE — NON-NEGOTIABLE
+---------------------------------
+Rafael is the custodian and gatekeeper of a lineage.
+He is NEVER positioned as a lifestyle guru, status superior, or life coach.
+His domain authority is Wing Chun and the Moy Yat lineage ONLY.
+All copy must stay inside that boundary.
+
+PRICE POINT
+-----------
+$1,000–$1,500/month.
+This is a high-ticket brotherhood offer.
+The site must attract and qualify men serious enough to pay that without flinching.
+It is NOT selling martial arts classes.
+
+DESIGN SYSTEM
+-------------
+Dark luxury aesthetic.
+Colors: #0B0B0B (matte black), #2B1F1A (espresso), #C6A962 (gold), #E8E3D9 (bone)
+Typography: serif for emotional/voice lines, sans for labels/functional text
+Gold used for emphasis, italics for voice/tone lines
+
+
+==========================================
+SECTION 2: FULL WEBSITE COPY — PAGE BY PAGE
+==========================================
+
+PAGE FLOW:
+Navbar → Hero → Recognition → TheRoom → Shift → AnchorQuote →
+Legacy → Voice → Filter → Experience → Integration → Application → FinalClose → Footer
+
+
+--- NAVBAR ---
+
+Logo: Kung Fu Legacy (logo-transparent.png — intricate overlapping petal design + thin ring + wordmark)
+Nav links: [none visible in copy — minimal navbar]
+CTA: "Request Entry" button scrolls to application form
+
+
+--- HERO ---
+
+Location label: Converse, Texas
+Brand name: Kung Fu Legacy
+Tagline (serif italic): "You already know what is missing."
+
+Body:
+"Not structure. Not discipline. You have both."
+"What you have not found is the men who carry the same weight."
+
+CTA button: "Request Entry"
+
+Bottom right (desktop): "Instructor / Rafael Gonzalez"
+
+
+--- RECOGNITION ---
+
+Label: Recognition
+H2: "You are not here because something is broken."
+
+Body paragraphs:
+"You have built something real. You show up. You hold the standard. You have been doing
+this long enough that most of the people around you have become background. They respect
+you. Some admire you. They defer to you in the room."
+
+Italic line: "None of them can actually challenge you."
+
+"That is the absence you have been feeling. Not a gap in your training. Not a need for
+more structure. A room that has been empty for a long time. Men who are operating at the
+level you are. Who will tell you the truth. Who carry enough themselves to have earned the
+right to say it."
+
+"That kind of brotherhood does not happen by accident. It is built through shared practice,
+shared pressure, and time. It has a structure. It has a lineage. It asks something real from
+the men inside it."
+
+"You have been patient with the absence. You have worked around it. You have filled the
+space with output, with achievement, with forward motion. But you feel it."
+
+Gold italic closing:
+"Most men stop looking for it. They settle. You are still looking. That is why you are here."
+
+
+--- THE ROOM ---
+
+Label: The Room
+H2: "You will know the moment you walk in."
+
+Body:
+"This is not a class. It is not an open session. There is no drop-in."
+"The men here were selected. They earned the right to be corrected. They hold each other
+to a standard that most rooms never reach."
+
+Italic line: "When you walk in, you feel it immediately."
+
+"Not intensity for its own sake. Presence. Structure. Men who take the work seriously —
+and take each other seriously."
+
+Gold italic: "That is what has been missing."
+
+[Photos: wide kwoon interior shot + 2-up grid: wooden dummy + altar wall]
+Caption: Converse, Texas
+
+
+--- SHIFT ---
+
+Label: The System
+H2: "This is not a collection of techniques."
+Gold italic: "This is a system."
+
+Three principles (gold accent + bone text):
+- Structure / before movement.
+- Sensitivity / before speed.
+- Control / before force.
+
+Closing:
+"You are not learning what to do."
+Italic: "You are building understanding."
+
+
+--- ANCHOR QUOTE ---
+
+[Full-width centered quote block]
+"A structure cannot hold
+what it was not built to carry."
+(Gold italic on second line)
+
+
+--- LEGACY ---
+
+Label: Legacy
+H2: "Built on direct transmission."
+Italic subline: "This is not learned casually. / It is passed, refined, and earned."
+
+Lineage chain:
+Ip Man — Moy Yat — Thornton Williams (Moy Don) — Rafael Gonzalez (Moy Don Xùn)
+
+Capacity line: "This brotherhood holds a maximum of fifteen men."
+
+[Training photo: Rafael with students]
+
+Closing lines:
+"Refined through years of practice."
+"Tested through real students."
+"Preserved with intention."
+
+
+--- VOICE (From the Instructor) ---
+
+Label: From the Instructor
+[Circular portrait of Rafael — gold border]
+Caption: Rafael Gonzalez · Sifu
+
+[Gold vertical rule]
+
+Voice lines (serif italic):
+"I am not building a school. I am building a brotherhood."
+
+"What I carry was passed to me through a direct line from Ip Man — through Moy Yat,
+through my teacher Moy Don. That transmission does not go to everyone. It goes to the men
+who are ready to receive it and carry it forward."
+
+"This system is not philosophy. I have spent three decades in this lineage and watched
+what it builds in the men who enter it seriously."
+
+"What you enter here is not a program. It is a circle of men — selected, not collected.
+Men who are building something in their lives, who understand that iron sharpens iron,
+and who are ready to be held to a standard by the men beside them."
+
+"What you enter is not just Wing Chun. You enter a living lineage — three decades of
+refinement — and the men who carry it beside you."
+
+[Gold rule]
+
+Closing line (larger, non-italic):
+"If that is what you are looking for, request entry."
+
+[Gold vertical rule]
+
+
+--- FILTER (This is / is not for you) ---
+
+Two-column layout.
+
+THIS IS NOT FOR YOU IF:
+- You are between stable commitments or looking for something to try.
+- You want technique. This is not technique-based instruction.
+- You are not ready to be corrected without resistance.
+- You want to take from this room more than you give.
+- You are looking for something external to address what you have not yet faced yourself.
+
+THIS IS FOR YOU IF:
+- You have built something real and you are ready to go deeper than you can go alone.
+- You are the most capable man in most rooms — and that has started to feel like a ceiling.
+- You understand that what you bring matters as much as what you gain.
+- You can be led. You can lead. And you know when to do each.
+- You are ready to enter a lineage — not attend a program.
+
+
+--- EXPERIENCE (Training) ---
+
+Label: Training
+H2: "Training here is different."
+
+Italic challenge lines:
+"You will be corrected."
+"You will be challenged."
+"You will be held accountable."
+
+[Gold rule]
+
+"Progress is earned."
+
+Label: You will develop:
+Grid (6 items): Structure / Sensitivity / Precision / Control / Discipline / Presence
+
+Gold callout:
+Label: "And something most never reach:"
+Gold serif: "Understanding."
+
+Label: What you train
+Table:
+- Siu Lim Tao / The first form. Structure, root, and the economy of motion.
+- Chum Kiu / Bridging and footwork. How to enter, turn, and control space.
+- Biu Jee / Emergency techniques and extreme-angle striking.
+- Chi Sao / Sticky hands. Sensitivity, reflexes, and live application — the core of Wing Chun sparring.
+- Muk Yan Jong / The wooden dummy. Angles, combinations, and contact conditioning.
+
+[Training photo]
+
+
+--- INTEGRATION ---
+
+Label: Integration
+H2: "This goes beyond fighting."
+Italic: "It shapes how you move, think, and carry yourself."
+
+Core attributes (large serif):
+"Your structure."
+"Your discipline."
+"Your awareness."
+
+[Gold rule]
+
+Gold line: "Training does not stay on the floor."
+
+Three pillars (left gold border):
+- Strength is built. / Physical and mental.
+- Clarity is trained. / In movement. In thought.
+- Discipline is lived. / Not performed.
+
+[Photo: Rafael]
+
+
+--- APPLICATION ---
+
+Label: Application
+H2: "Entry is not given."
+
+Body:
+"It is earned."
+"It is granted by the men already inside it."
+
+Italic: "What you are committing to is not a training schedule. / It is a standard."
+
+"Applications are reviewed. Entry is not guaranteed. If you are the right man, you will know
+it before you submit."
+
+[Gold rule]
+
+FORM FIELDS:
+1. Full Name
+2. Phone
+3. Email
+4. Training Experience (dropdown: None / Beginner / Intermediate / Advanced)
+5. "What do you do, and what are you currently building?" (textarea)
+   Placeholder: "Your profession, business, or endeavor. Be specific."
+6. "Why do you want to enter this brotherhood?" (textarea)
+   Placeholder: "Be specific. Not what you want to learn — why this, why now."
+7. "What do you bring to a group of men at this level?" (textarea)
+   Placeholder: "Skills, disciplines, experience, perspective. What makes you an asset to the men around you?"
+8. "What do you want to develop most?" (multi-select grid):
+   Structure / Discipline / Brotherhood / Leadership / Physical Mastery / Personal Growth
+
+COMMITMENT QUALIFIER QUESTIONS (Yes/No):
+Q1: "This brotherhood demands consistent presence and full commitment — not when convenient,
+but as a standard. Are you in a place in your life where you can honor that?"
+
+Q2: "You will be corrected. Your assumptions will be challenged. The men around you will hold
+you to a standard. Are you ready to be led before you lead?"
+
+Q3: "Are you willing to travel to train if required?"
+
+Q4: "The men who enter this brotherhood are selected for the value they bring — not just what
+they seek. Do you understand that your role here is as much about contribution as it is about
+development?"
+
+Submit button: "Request Entry"
+
+SUCCESS STATE COPY (after submission):
+Label: Received
+H3: "Application received."
+"Your application will be reviewed by Rafael personally."
+"If it advances, you will receive a direct call — not an email, not an automated message.
+Rafael will reach out within a few days."
+Italic: "Sit with what you wrote. It will be the first thing you are asked about."
+
+
+--- FINAL CLOSE ---
+
+Italic:
+"Some men are not looking for more information."
+"They are looking for the men they were meant to stand with."
+
+CTA button: "Request Entry"
+
+
+--- FOOTER ---
+
+Logo: Kung Fu Legacy (transparent version)
+Lineage: Yip Man · Moy Yat · Moy Don · Moy Don Xùn
+[Thin gold rule]
+Copyright: © 2026 Rafael Gonzalez. All rights reserved.
+
+
+==========================================
+SECTION 3: WHAT IS NOT YET BUILT
+==========================================
+
+- Testimonials section: exists in code but hidden (SHOW_TESTIMONIALS = false).
+  No real member quotes yet. Will activate when first real quote is available.
+- Pricing is NOT displayed anywhere on the site.
+- No FAQ section.
+- No blog or content section.
+- GA4 and Meta Pixel IDs not yet configured.
+- Stripe payment link not yet embedded (acceptance workflow exists but no payment link).
+- Notion CRM not yet built.
+- Traffic strategy not yet defined.
+
+
+==========================================
+SECTION 4: AUDIT INSTRUCTIONS
+==========================================
+
+Audit this site section by section in page order.
+
+For each section evaluate against:
+
+1. POSITIONING CLARITY
+Does this section communicate brotherhood and lineage,
+or does it accidentally read like a martial arts gym or coaching offer?
+
+2. IDEAL CLIENT MATCH
+Would a serious, capable, high-earning man feel recognized and drawn in,
+or would he feel like he is being sold to?
+
+3. COPY QUALITY
+Is the language precise and authoritative?
+Does it respect the reader's intelligence?
+Does it stay within Rafael's domain authority (Wing Chun + lineage only)?
+
+4. CONVERSION LOGIC
+Does the page build desire, qualify the reader, and move him toward requesting entry?
+Are there sections that slow conversion or create confusion?
+
+5. FRICTION POINTS
+Anything that would cause the right man to leave,
+or the wrong man to feel welcome.
+
+6. MISSING ELEMENTS
+What is absent that the ideal client would need to see before requesting entry?
+
+7. FORM AUDIT
+Evaluate the application form specifically:
+- Does it feel like a brotherhood entry process or a standard web form?
+- Are the questions right for this offer and this man?
+- Is anything missing, redundant, or tone-inconsistent?
+
+OUTPUT FORMAT:
+Go section by section in page order.
+For each section: what works / what to change / specific recommendation.
+End with a ranked priority list: top 5 changes that would most impact
+conversion for this specific offer and this specific man.
+
+Do not give generic website advice.
+Every recommendation must be specific to this offer, this price point, and this ideal client.

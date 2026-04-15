@@ -36,7 +36,7 @@ const INITIAL: FormData = {
   understandCommunity: '',
 }
 
-const GOALS = ['Structure', 'Discipline', 'Brotherhood', 'Leadership', 'Physical Mastery', 'Personal Growth']
+const GOALS = ['Structure', 'Discipline', 'Brotherhood', 'Mastery', 'Precision', 'Presence']
 
 const QUALIFIERS: { field: keyof FormData; question: string }[] = [
   {
@@ -178,6 +178,28 @@ export default function Application() {
         <motion.p variants={fadeUp} className="body text-bone/55 mb-16">
           Applications are reviewed. Entry is not guaranteed. If you are the right man, you will know it before you submit.
         </motion.p>
+
+        {/* ── Operational Clarity ───────────────────────────────────────── */}
+        <motion.div variants={stagger} className="mb-16">
+          <motion.p variants={fadeUp} className="label mb-6">
+            What membership includes
+          </motion.p>
+          <motion.div variants={stagger} className="space-y-3 mb-8">
+            {[
+              'One-on-one instruction. Weekly group session.',
+              'Structured progression through the complete system.',
+              'You train here, in person, in Converse, Texas.',
+              'This is not remote. This is not a course.',
+            ].map((line, i) => (
+              <motion.p key={i} variants={fadeUp} className="font-sans text-sm text-bone/55">
+                {line}
+              </motion.p>
+            ))}
+          </motion.div>
+          <motion.p variants={fadeUp} className="font-serif text-lg text-bone/75 italic">
+            Men who enter this brotherhood make a serious and ongoing financial commitment to the work.
+          </motion.p>
+        </motion.div>
 
         <motion.div variants={fadeUp} className="gold-line mb-16" />
 

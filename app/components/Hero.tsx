@@ -8,7 +8,7 @@ const fadeUp = { hidden: { opacity: 0, y: 28 }, show: { opacity: 1, y: 0 } }
 
 const stagger = {
   show: {
-    transition: { staggerChildren: 0.14, delayChildren: 0.5 },
+    transition: { staggerChildren: 0.14, delayChildren: 0.3 },
   },
 }
 
@@ -52,16 +52,6 @@ export default function Hero() {
           initial="hidden"
           animate="show"
         >
-          {/* Location pill */}
-          <motion.p
-            variants={fadeUp}
-            transition={{ duration: 0.9, ease: 'easeOut' }}
-            className="label mb-10 flex items-center gap-3"
-          >
-            <span className="w-4 h-px bg-gold inline-block" />
-            Converse, Texas
-          </motion.p>
-
           {/* Brand name */}
           <motion.h1
             variants={fadeUp}

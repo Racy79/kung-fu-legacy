@@ -13,8 +13,8 @@ const stagger = {
 }
 
 const pillars = [
-  { headline: 'Strength is built.', sub: 'Physical and mental.' },
-  { headline: 'Clarity is trained.', sub: 'In movement. In thought.' },
+  { headline: 'Structure is built.', sub: 'In the body. In every technique.' },
+  { headline: 'Sensitivity is developed.', sub: 'In contact. In what stands before you.' },
   { headline: 'Discipline is lived.', sub: 'Not performed.' },
 ]
 
@@ -33,14 +33,14 @@ export default function Integration() {
         </motion.p>
 
         <motion.h2 variants={fadeUp} className="heading-lg mb-8">
-          This goes beyond fighting.
+          Qualities most training ignores.
         </motion.h2>
 
         <motion.p
           variants={fadeUp}
           className="font-serif text-xl md:text-2xl text-bone/65 italic mb-20"
         >
-          It shapes how you move, think, and carry yourself.
+          Not force. Not speed. Foundation.
         </motion.p>
 
         {/* Core attributes */}
@@ -59,7 +59,7 @@ export default function Integration() {
         <motion.div variants={fadeUp} className="gold-line mb-20" />
 
         <motion.p variants={fadeUp} className="font-serif text-xl text-gold mb-20">
-          Training does not stay on the floor.
+          What is trained here becomes how you operate.
         </motion.p>
 
         {/* Pillars */}
