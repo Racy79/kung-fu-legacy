@@ -39,9 +39,9 @@ export default function Voice() {
           <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border border-gold/25">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/unnamed.png"
+              src="/images/hero.jpg"
               alt="Rafael Gonzalez — Sifu, Kung Fu Legacy"
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-[center_20%]"
             />
           </div>
           <p className="font-sans text-[9px] tracking-[0.28em] uppercase text-bone/30 mt-4">

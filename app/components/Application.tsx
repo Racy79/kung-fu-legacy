@@ -232,7 +232,6 @@ export default function Application() {
         ) : (
           /* ── Form ───────────────────────────────────────────────────────── */
           <form id="apply-form" onSubmit={handleSubmit} className="space-y-12 scroll-mt-28" noValidate>
-            <h3 className="font-serif text-2xl text-bone">Request Entry</h3>
 
             {/* ── Basic fields ───────────────────────────────────────────── */}
             <div className="space-y-6">
