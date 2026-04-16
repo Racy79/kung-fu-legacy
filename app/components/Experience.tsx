@@ -17,7 +17,7 @@ const developments = [
   'Precision',
   'Control',
   'Discipline',
-  'Presence',
+  'Timing',
 ]
 
 export default function Experience() {

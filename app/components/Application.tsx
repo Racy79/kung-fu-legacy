@@ -282,9 +282,9 @@ export default function Application() {
                   >
                     <option value="" disabled>Select your background</option>
                     <option value="none">None</option>
-                    <option value="beginner">Beginner</option>
-                    <option value="intermediate">Intermediate</option>
-                    <option value="advanced">Advanced</option>
+                    <option value="some">Some Formal Training</option>
+                    <option value="extensive">Extensive Training</option>
+                    <option value="high-level">High-Level Experience</option>
                   </select>
                   {/* Custom select arrow */}
                   <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-bone/30">
