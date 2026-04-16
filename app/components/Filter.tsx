@@ -16,14 +16,14 @@ const notForYou = [
   'You want technique. This is not technique-based instruction.',
   'You are not ready to be corrected without resistance.',
   'You want to take from this room more than you give.',
-  'You are looking for something external to address what you have not yet faced yourself.',
+  'You are not willing to be held to a standard by the men around you.',
 ]
 
 const forYou = [
   'You have built something real and you are ready to go deeper than you can go alone.',
   'You are the most capable man in most rooms — and that has started to feel like a ceiling.',
   'You understand that what you bring matters as much as what you gain.',
-  'You can be led. You can lead. And you know when to do each.',
+  'You understand that in a serious lineage, rank is earned — not assumed.',
   'You are ready to enter a lineage — not attend a program.',
 ]
 

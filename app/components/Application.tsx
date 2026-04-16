@@ -36,7 +36,7 @@ const INITIAL: FormData = {
   understandCommunity: '',
 }
 
-const GOALS = ['Structure', 'Discipline', 'Brotherhood', 'Mastery', 'Precision', 'Presence']
+const GOALS = ['Structure', 'Sensitivity', 'Precision', 'Discipline', 'Brotherhood', 'Mastery']
 
 const QUALIFIERS: { field: keyof FormData; question: string }[] = [
   {
@@ -273,7 +273,7 @@ export default function Application() {
               </div>
 
               <div>
-                <label className="label block mb-3">Training Experience</label>
+                <label className="label block mb-3">Previous Martial Background</label>
                 <div className="relative">
                   <select
                     value={form.experience}

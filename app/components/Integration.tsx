@@ -59,7 +59,7 @@ export default function Integration() {
         <motion.div variants={fadeUp} className="gold-line mb-20" />
 
         <motion.p variants={fadeUp} className="font-serif text-xl text-gold mb-20">
-          What is trained here becomes how you operate.
+          What is trained here changes how you move, respond, and carry structure under pressure.
         </motion.p>
 
         {/* Pillars */}
