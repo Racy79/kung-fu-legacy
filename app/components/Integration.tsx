@@ -81,7 +81,7 @@ export default function Integration() {
           className="relative h-72 md:h-[520px] overflow-hidden mt-20"
         >
           <Image
-            src="/images/IMG_3853.png"
+            src="/images/50A5A5C3-6999-4E09-8721-7C69350B934A.png"
             alt="Rafael Gonzalez — Kung Fu Legacy"
             fill
             quality={100}
