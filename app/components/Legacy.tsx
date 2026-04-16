@@ -111,7 +111,7 @@ export default function Legacy() {
           className="relative overflow-hidden mb-20 border border-gold/30"
         >
           <Image
-            src="/images/Group Photo.jpg"
+            src="/images/group-photo.jpg"
             alt="Kung Fu Legacy — Rafael Gonzalez with students"
             width={1200}
             height={800}
