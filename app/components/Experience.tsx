@@ -122,9 +122,9 @@ export default function Experience() {
           className="relative h-72 md:h-[420px] overflow-hidden mt-20 group"
         >
           <img
-            src="/images/40258FD4-D377-4396-8635-0D11A9EC97E5.jpeg"
-            alt="Wing Chun training"
-            className="absolute inset-0 w-full h-full object-cover object-top"
+            src="/images/IMG_3853.png"
+            alt="Muk Yan Jong — wooden dummy training"
+            className="absolute inset-0 w-full h-full object-cover object-[center_15%]"
           />
         </motion.div>
       </motion.div>
