@@ -56,7 +56,7 @@ export default function Navbar() {
         {/* Request Entry — right anchor */}
         <button
           onClick={scrollToForm}
-          className="font-sans text-[10px] tracking-[0.25em] uppercase text-gold border border-gold/60 px-6 py-2.5 transition-all duration-500 hover:bg-gold hover:text-matte-black hover:border-gold focus:outline-none focus-visible:ring-1 focus-visible:ring-gold/40"
+          className="btn px-6 py-2.5"
         >
           Request Entry
         </button>

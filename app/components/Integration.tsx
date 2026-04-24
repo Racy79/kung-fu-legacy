@@ -36,21 +36,14 @@ export default function Integration() {
           Qualities most training ignores.
         </motion.h2>
 
-        <motion.p
-          variants={fadeUp}
-          className="font-serif text-xl md:text-2xl text-bone/65 italic mb-20"
-        >
+        <motion.p variants={fadeUp} className="kfl-pullquote text-bone/65 mb-20">
           Not force. Not speed. Foundation.
         </motion.p>
 
         {/* Core attributes */}
         <motion.div variants={stagger} className="space-y-7 mb-20">
           {['Your structure.', 'Your discipline.', 'Your awareness.'].map((text, i) => (
-            <motion.p
-              key={i}
-              variants={fadeUp}
-              className="font-serif text-2xl md:text-3xl text-bone"
-            >
+            <motion.p key={i} variants={fadeUp} className="kfl-pullquote--authority">
               {text}
             </motion.p>
           ))}
@@ -58,7 +51,7 @@ export default function Integration() {
 
         <motion.div variants={fadeUp} className="gold-line mb-20" />
 
-        <motion.p variants={fadeUp} className="font-serif text-xl text-gold mb-20">
+        <motion.p variants={fadeUp} className="kfl-pullquote kfl-pullquote--gold mb-20">
           What is trained here changes how you move, respond, and carry structure under pressure.
         </motion.p>
 
@@ -68,8 +61,8 @@ export default function Integration() {
             <motion.div key={i} variants={fadeUp} className="flex gap-6">
               <div className="w-px bg-gold/25 flex-shrink-0" />
               <div>
-                <p className="font-serif text-xl text-bone mb-1">{headline}</p>
-                <p className="font-sans text-sm text-bone/55">{sub}</p>
+                <p className="kfl-pullquote not-italic text-bone mb-1">{headline}</p>
+                <p className="kfl-support text-bone/55">{sub}</p>
               </div>
             </motion.div>
           ))}

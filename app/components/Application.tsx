@@ -167,10 +167,7 @@ export default function Application() {
           </motion.p>
         </motion.div>
 
-        <motion.p
-          variants={fadeUp}
-          className="font-serif text-xl text-bone/75 italic mb-10"
-        >
+        <motion.p variants={fadeUp} className="kfl-pullquote text-bone/75 mb-10">
           What you are committing to is not a training schedule.<br />
           It is a standard.
         </motion.p>
@@ -188,15 +185,14 @@ export default function Application() {
             {[
               'One-on-one instruction. Weekly group session.',
               'Structured progression through the complete system.',
-              'You train here, in person, in Converse, Texas.',
               'This is not remote. This is not a course.',
             ].map((line, i) => (
-              <motion.p key={i} variants={fadeUp} className="font-sans text-sm text-bone/55">
+              <motion.p key={i} variants={fadeUp} className="kfl-support text-bone/55">
                 {line}
               </motion.p>
             ))}
           </motion.div>
-          <motion.p variants={fadeUp} className="font-serif text-lg text-bone/75 italic">
+          <motion.p variants={fadeUp} className="kfl-pullquote text-bone/75">
             Men who enter this brotherhood make a serious and ongoing financial commitment to the work.
           </motion.p>
         </motion.div>
@@ -215,7 +211,7 @@ export default function Application() {
           >
             <div className="w-px h-10 bg-gold/40 mx-auto mb-10" />
             <p className="label mb-6 text-gold">Received</p>
-            <h3 className="font-serif text-2xl md:text-3xl text-bone mb-8">
+            <h3 className="kfl-pullquote--authority text-bone mb-8">
               Application received.
             </h3>
             <p className="body text-bone/65 mb-6">
@@ -224,7 +220,7 @@ export default function Application() {
             <p className="body text-bone/65 mb-6">
               If it advances, you will receive a direct call — not an email, not an automated message. Rafael will reach out within a few days.
             </p>
-            <p className="font-serif text-lg text-bone/80 italic">
+            <p className="kfl-pullquote text-bone/80">
               Sit with what you wrote. It will be the first thing you are asked about.
             </p>
             <div className="w-px h-10 bg-gold/40 mx-auto mt-10" />
@@ -244,7 +240,7 @@ export default function Application() {
                   className={`field ${errors.fullName ? '!border-gold/60' : ''}`}
                   placeholder="Your full name"
                 />
-                {errors.fullName && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.fullName}</p>}
+                {errors.fullName && <p data-error className="mt-2 kfl-support text-gold">{errors.fullName}</p>}
               </div>
 
               <div className="grid sm:grid-cols-2 gap-6">
@@ -257,7 +253,7 @@ export default function Application() {
                     className={`field ${errors.phone ? '!border-gold/60' : ''}`}
                     placeholder="(555) 000-0000"
                   />
-                  {errors.phone && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.phone}</p>}
+                  {errors.phone && <p data-error className="mt-2 kfl-support text-gold">{errors.phone}</p>}
                 </div>
                 <div>
                   <label className="label block mb-3">Email</label>
@@ -268,7 +264,7 @@ export default function Application() {
                     className={`field ${errors.email ? '!border-gold/60' : ''}`}
                     placeholder="your@email.com"
                   />
-                  {errors.email && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.email}</p>}
+                  {errors.email && <p data-error className="mt-2 kfl-support text-gold">{errors.email}</p>}
                 </div>
               </div>
 
@@ -293,7 +289,7 @@ export default function Application() {
                     </svg>
                   </div>
                 </div>
-                {errors.experience && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.experience}</p>}
+                {errors.experience && <p data-error className="mt-2 kfl-support text-gold">{errors.experience}</p>}
               </div>
 
               <div>
@@ -305,7 +301,7 @@ export default function Application() {
                   className={`field resize-none ${errors.profession ? '!border-gold/60' : ''}`}
                   placeholder="Your profession, business, or endeavor. Be specific."
                 />
-                {errors.profession && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.profession}</p>}
+                {errors.profession && <p data-error className="mt-2 kfl-support text-gold">{errors.profession}</p>}
               </div>
 
               <div>
@@ -317,7 +313,7 @@ export default function Application() {
                   className={`field resize-none ${errors.whyTrain ? '!border-gold/60' : ''}`}
                   placeholder="Be specific. Not what you want to learn — why this, why now."
                 />
-                {errors.whyTrain && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.whyTrain}</p>}
+                {errors.whyTrain && <p data-error className="mt-2 kfl-support text-gold">{errors.whyTrain}</p>}
               </div>
 
               <div>
@@ -329,7 +325,7 @@ export default function Application() {
                   className={`field resize-none ${errors.whatYouBring ? '!border-gold/60' : ''}`}
                   placeholder="Skills, disciplines, experience, perspective. What makes you an asset to the men around you?"
                 />
-                {errors.whatYouBring && <p data-error className="mt-2 font-sans text-sm text-gold">{errors.whatYouBring}</p>}
+                {errors.whatYouBring && <p data-error className="mt-2 kfl-support text-gold">{errors.whatYouBring}</p>}
               </div>
             </div>
 
@@ -345,7 +341,7 @@ export default function Application() {
                       type="button"
                       onClick={() => toggleGoal(goal)}
                       className={`
-                        px-5 py-4 border text-left font-sans text-sm
+                        px-5 py-4 border text-left kfl-support
                         transition-all duration-300
                         ${active
                           ? 'border-gold text-gold bg-gold/5'
@@ -365,7 +361,7 @@ export default function Application() {
               <p className="label">Commitment</p>
               {QUALIFIERS.map(({ field, question }) => (
                 <div key={field}>
-                  <p className="font-sans text-sm text-bone/65 leading-relaxed mb-5">
+                  <p className="body text-bone/65 mb-5">
                     {question}
                   </p>
                   <div className="flex gap-4">
@@ -376,7 +372,7 @@ export default function Application() {
                         <label
                           key={opt}
                           className={`
-                            flex items-center gap-3 cursor-pointer font-sans text-sm
+                            flex items-center gap-3 cursor-pointer kfl-support
                             min-h-[48px] px-4 border transition-all duration-300
                             ${checked
                               ? 'text-gold border-gold/40 bg-gold/5'
@@ -410,21 +406,21 @@ export default function Application() {
                       )
                     })}
                   </div>
-                  {errors[field] && <p data-error className="mt-3 font-sans text-sm text-gold">{errors[field]}</p>}
+                  {errors[field] && <p data-error className="mt-3 kfl-support text-gold">{errors[field]}</p>}
                 </div>
               ))}
             </div>
 
             {/* ── Validation banner ──────────────────────────────────────── */}
             {Object.keys(errors).length > 0 && (
-              <p className="font-sans text-sm text-gold/80 border border-gold/20 px-5 py-4">
+              <p className="kfl-support text-gold/80 border border-gold/20 px-5 py-4">
                 Please fill in all required fields before submitting.
               </p>
             )}
 
             {/* ── Error message ──────────────────────────────────────────── */}
             {status === 'error' && (
-              <p className="font-sans text-sm text-bone/55 border border-bone/15 px-5 py-4">
+              <p className="kfl-support text-bone/55 border border-bone/15 px-5 py-4">
                 {errorMsg}
               </p>
             )}

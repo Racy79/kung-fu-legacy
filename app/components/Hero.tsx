@@ -54,7 +54,7 @@ export default function Hero() {
           <motion.p
             variants={fadeUp}
             transition={{ duration: 0.9, ease: 'easeOut' }}
-            className="font-serif text-xl md:text-2xl text-bone/80 italic mb-10"
+            className="kfl-pullquote text-bone/80 mb-10"
           >
             You already know what is missing.
           </motion.p>
@@ -89,12 +89,8 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2, delay: 1.6 }}
       >
-        <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-bone/30">
-          Instructor
-        </p>
-        <p className="font-serif text-base text-bone/50 mt-1">
-          Rafael Gonzalez
-        </p>
+        <p className="label opacity-30">Instructor</p>
+        <p className="kfl-support text-bone/50 mt-1">Rafael Gonzalez</p>
       </motion.div>
     </section>
   )

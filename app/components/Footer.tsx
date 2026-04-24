@@ -22,7 +22,7 @@ export default function Footer() {
         />
 
         {/* Lineage */}
-        <p className="font-sans text-[9px] tracking-[0.32em] uppercase text-bone/20 mb-8 text-center">
+        <p className="kfl-ghost mb-8 text-center">
           Yip Man &middot; Moy Yat &middot; Moy Don &middot; Moy Don Xùn
         </p>
 
@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="w-8 h-px bg-gold/20 mb-8" />
 
         {/* Copyright */}
-        <p className="font-sans text-[10px] text-bone/15 text-center">
+        <p className="kfl-ghost-secondary text-center">
           &copy; {new Date().getFullYear()} Rafael Gonzalez. All rights reserved.
         </p>
 

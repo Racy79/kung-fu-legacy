@@ -9,7 +9,9 @@ import Testimonials from './components/Testimonials'
 import Filter from './components/Filter'
 import Experience from './components/Experience'
 import Integration from './components/Integration'
+import Requirement from './components/Requirement'
 import Application from './components/Application'
+import DecisiveMoment from './components/DecisiveMoment'
 import FinalClose from './components/FinalClose'
 import Footer from './components/Footer'
 
@@ -27,7 +29,9 @@ export default function Home() {
       <Filter />
       <Experience />
       <Integration />
+      <Requirement />
       <Application />
+      <DecisiveMoment />
       <FinalClose />
       <Footer />
     </main>

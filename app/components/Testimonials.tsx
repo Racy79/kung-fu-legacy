@@ -67,14 +67,14 @@ export default function Testimonials() {
             <motion.div key={i} variants={fadeUp}>
 
               {/* Quote */}
-              <p className="font-serif text-lg md:text-xl text-bone/80 italic leading-relaxed mb-8">
+              <p className="kfl-pullquote text-bone/80 mb-8">
                 {t.quote}
               </p>
 
               {/* Attribution */}
               <div className="flex items-center gap-4">
                 <div className="w-5 h-px bg-gold/40" />
-                <p className="font-sans text-[10px] tracking-[0.25em] uppercase text-bone/40">
+                <p className="label text-bone/40">
                   {t.name}
                   {t.descriptor && (
                     <span className="text-bone/25"> &nbsp;·&nbsp; {t.descriptor}</span>

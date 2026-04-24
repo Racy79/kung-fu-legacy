@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   verification: {
     google: 'Ov1NIWBODJau4QwAxr3NX-6TTbgejiCAqEtQCyY-lZk',
   },
-  title: 'Kung Fu Legacy — Wing Chun Instruction in Converse, Texas',
+  title: 'Wing Chun Training | Kung Fu Legacy',
   description:
-    'Authentic Wing Chun instruction and personal development in Converse, Texas under Sifu Rafael Gonzalez. Direct lineage from Ip Man. Selective enrollment. Apply now.',
+    'Authentic Wing Chun instruction and personal development in Converse, Texas under Sifu Rafael Gonzalez. Direct lineage from Yip Man (Ip Man). Selective enrollment. Apply now.',
   keywords: [
     'Wing Chun San Antonio',
     'Wing Chun Converse Texas',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Kung Fu Legacy — Wing Chun Converse, Texas',
-    description: 'Authentic Wing Chun instruction under Sifu Rafael Gonzalez. Direct Ip Man lineage. Selective enrollment.',
+    description: 'Authentic Wing Chun instruction under Sifu Rafael Gonzalez. Direct Yip Man (Ip Man) lineage. Selective enrollment.',
     siteName: 'Kung Fu Legacy',
     locale: 'en_US',
     type: 'website',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Kung Fu Legacy — Wing Chun Converse, Texas',
-    description: 'Authentic Wing Chun instruction under Sifu Rafael Gonzalez. Direct Ip Man lineage. Selective enrollment.',
+    description: 'Authentic Wing Chun instruction under Sifu Rafael Gonzalez. Direct Yip Man (Ip Man) lineage. Selective enrollment.',
     images: ['https://thekungfulegacy.com/images/hero.jpg'],
   },
   alternates: {
@@ -66,7 +66,7 @@ const schemaMarkup = {
   '@context': 'https://schema.org',
   '@type': 'SportsActivityLocation',
   name: 'Kung Fu Legacy',
-  description: 'Authentic Wing Chun instruction and personal development in Converse, Texas under Sifu Rafael Gonzalez. Direct lineage from Ip Man through Moy Yat and Moy Don.',
+  description: 'Authentic Wing Chun instruction and personal development in Converse, Texas under Sifu Rafael Gonzalez. Direct lineage from Yip Man (Ip Man) through Moy Yat and Moy Don.',
   url: 'https://thekungfulegacy.com',
   telephone: '+17879406694',
   address: {

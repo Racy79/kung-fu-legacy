@@ -25,10 +25,10 @@ export default function AnchorQuote() {
         {/* Top vertical rule */}
         <div className="w-px h-16 bg-gold/30 mx-auto mb-16" />
 
-        <blockquote className="font-serif text-2xl md:text-4xl lg:text-5xl text-bone font-light leading-snug">
+        <blockquote className="heading-lg text-center">
           A structure cannot hold
           <br className="hidden sm:block" />{' '}
-          <span className="text-gold italic">what it was not built to carry.</span>
+          <span className="text-bone/75 italic">what it was not built to carry.</span>
         </blockquote>
 
         {/* Bottom vertical rule */}

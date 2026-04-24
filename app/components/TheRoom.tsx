@@ -36,13 +36,13 @@ export default function TheRoom() {
           <motion.p variants={fadeUp} className="body text-bone/70">
             The men here were selected. They earned the right to be corrected. They hold each other to a standard that most rooms never reach.
           </motion.p>
-          <motion.p variants={fadeUp} className="font-serif text-xl md:text-2xl text-bone italic">
+          <motion.p variants={fadeUp} className="kfl-pullquote">
             When you walk in, you feel it immediately.
           </motion.p>
           <motion.p variants={fadeUp} className="body text-bone/70">
             Not intensity for its own sake. Presence. Structure. Men who take the work seriously — and take each other seriously.
           </motion.p>
-          <motion.p variants={fadeUp} className="font-serif text-xl text-gold italic">
+          <motion.p variants={fadeUp} className="kfl-pullquote kfl-pullquote--gold">
             That is what has been missing.
           </motion.p>
         </motion.div>

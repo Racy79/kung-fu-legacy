@@ -35,10 +35,7 @@ export default function Shift() {
           This is not a collection of techniques.
         </motion.h2>
 
-        <motion.p
-          variants={fadeUp}
-          className="font-serif text-2xl md:text-3xl text-gold italic mb-24"
-        >
+        <motion.p variants={fadeUp} className="kfl-pullquote--authority mb-24">
           This is a system.
         </motion.p>
 
@@ -49,8 +46,8 @@ export default function Shift() {
               variants={fadeUp}
               className="flex items-baseline gap-4 py-7 border-b border-bone/8 last:border-0"
             >
-              <span className="font-serif text-2xl md:text-3xl text-gold">{accent}</span>
-              <span className="font-sans text-base md:text-lg text-bone/55">{rest}</span>
+              <span className="kfl-pullquote--authority text-bone/80">{accent}</span>
+              <span className="body text-bone/55">{rest}</span>
             </motion.div>
           ))}
         </motion.div>
@@ -61,7 +58,7 @@ export default function Shift() {
           </motion.p>
           <motion.p
             variants={fadeUp}
-            className="font-serif text-xl md:text-2xl text-bone italic"
+            className="kfl-pullquote text-bone"
           >
             You are building understanding.
           </motion.p>

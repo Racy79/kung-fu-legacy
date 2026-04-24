@@ -45,11 +45,7 @@ export default function Experience() {
             'You will be challenged.',
             'You will be held accountable.',
           ].map((text, i) => (
-            <motion.p
-              key={i}
-              variants={fadeUp}
-              className="font-serif text-xl md:text-2xl text-bone/65 italic"
-            >
+            <motion.p key={i} variants={fadeUp} className="kfl-pullquote text-bone/65">
               {text}
             </motion.p>
           ))}
@@ -57,10 +53,7 @@ export default function Experience() {
 
         <motion.div variants={fadeUp} className="gold-line mb-16" />
 
-        <motion.p
-          variants={fadeUp}
-          className="font-serif text-xl md:text-2xl text-bone mb-16"
-        >
+        <motion.p variants={fadeUp} className="kfl-pullquote text-bone mb-16">
           Progress is earned.
         </motion.p>
 
@@ -79,7 +72,7 @@ export default function Experience() {
               variants={fadeUp}
               className="bg-matte-black px-6 py-8 hover:bg-espresso/30 transition-colors duration-500"
             >
-              <p className="font-serif text-xl md:text-2xl text-bone">{item}</p>
+              <p className="kfl-pullquote--authority text-bone">{item}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -89,10 +82,10 @@ export default function Experience() {
           variants={fadeUp}
           className="border-l-2 border-gold pl-8 py-2"
         >
-          <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-bone/55 mb-4">
+          <p className="label text-bone/55 mb-4">
             And something most never reach:
           </p>
-          <p className="font-serif text-2xl md:text-3xl text-gold">
+          <p className="kfl-pullquote--authority text-bone">
             Understanding.
           </p>
         </motion.div>
@@ -109,8 +102,8 @@ export default function Experience() {
               { name: 'Muk Yan Jong', description: 'The wooden dummy. Angles, combinations, and contact conditioning.' },
             ].map(({ name, description }) => (
               <div key={name} className="py-6 flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-8">
-                <p className="font-serif text-lg text-bone flex-shrink-0 sm:w-44">{name}</p>
-                <p className="font-sans text-sm text-bone/45 leading-relaxed">{description}</p>
+                <p className="kfl-pullquote not-italic text-bone flex-shrink-0 sm:w-44">{name}</p>
+                <p className="kfl-support text-bone/45">{description}</p>
               </div>
             ))}
           </div>

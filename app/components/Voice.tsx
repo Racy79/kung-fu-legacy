@@ -13,7 +13,7 @@ const stagger = {
 
 const lines = [
   'I am not building a school. I am building a brotherhood.',
-  'What I carry was passed to me through a direct line from Ip Man — through Moy Yat, through my teacher Moy Don. That transmission does not go to everyone. It goes to the men who are ready to receive it and carry it forward.',
+  'What I carry was passed to me through a direct line from Yip Man (Ip Man) — through Moy Yat, through my teacher Moy Don. That transmission does not go to everyone. It goes to the men who are ready to receive it and carry it forward.',
   'This system is not philosophy. I have spent three decades in the art and watched how serious training shapes the men who commit to it.',
   'What you enter here is not a program. It is a circle of men — selected, not collected. Men who are building something in their lives, who understand that iron sharpens iron, and who are ready to be held to a standard by the men beside them.',
   'What stands before you is a living lineage — refined through decades, carried by the men beside you.',
@@ -44,7 +44,7 @@ export default function Voice() {
               className="w-full h-full object-cover object-[65%_20%]"
             />
           </div>
-          <p className="font-sans text-[9px] tracking-[0.28em] uppercase text-bone/30 mt-4">
+          <p className="label opacity-30 mt-4">
             Rafael Gonzalez &nbsp;·&nbsp; Sifu
           </p>
         </motion.div>
@@ -56,11 +56,7 @@ export default function Voice() {
             <motion.p
               key={i}
               variants={fadeUp}
-              className={`font-serif italic leading-relaxed ${
-                i === 0
-                  ? 'text-xl md:text-2xl text-bone'
-                  : 'text-lg md:text-xl text-bone/80'
-              }`}
+              className={i === 0 ? 'kfl-pullquote text-bone' : 'kfl-pullquote text-bone/80'}
             >
               {line}
             </motion.p>
@@ -69,10 +65,7 @@ export default function Voice() {
 
         <motion.div variants={fadeUp} className="gold-line mt-14 mb-14" />
 
-        <motion.p
-          variants={fadeUp}
-          className="font-serif text-2xl md:text-3xl text-bone"
-        >
+        <motion.p variants={fadeUp} className="kfl-pullquote--authority">
           {lines[lines.length - 1]}
         </motion.p>
 

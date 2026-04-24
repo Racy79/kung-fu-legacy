@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(node -e ' *)",
+      "Bash(python _setup.py)",
+      "Bash(python3.exe _setup.py)",
+      "Bash(node _setup2.mjs)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}
