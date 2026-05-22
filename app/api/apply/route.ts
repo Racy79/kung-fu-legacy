@@ -1,57 +1,49 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { Resend } from 'resend'
+
+const resend = new Resend(process.env.RESEND_API_KEY)
+
+const RECIPIENTS = [
+  'rafaelgonzalezrosado@gmail.com',
+  'kungfuhousepr@gmail.com',
+]
 
 export async function POST(req: NextRequest) {
-  const webhookUrl = process.env.WEBHOOK_URL
-
-  if (!webhookUrl) {
-    return NextResponse.json({ error: 'ENV_MISSING' }, { status: 503 })
-  }
-
   const body = await req.json()
+  const { fullName, phone, email, experience, profession, whyTrain, whatYouBring, developGoals, commitToTraining, acceptChallenge, willTravel, understandCommunity } = body
 
-  const emailBody = `
-NEW BROTHERHOOD APPLICATION — KUNG FU LEGACY
-
-Name: ${body.fullName}
-Phone: ${body.phone}
-Email: ${body.email}
-Experience: ${body.experience}
-
-What they do and are building:
-${body.profession}
-
-Why they want to enter the brotherhood:
-${body.whyTrain}
-
-What they bring to the group:
-${body.whatYouBring}
-
-Goals: ${Array.isArray(body.developGoals) ? body.developGoals.join(', ') : body.developGoals}
-
-In a position to commit: ${body.commitToTraining}
-Ready to be led: ${body.acceptChallenge}
-Will travel: ${body.willTravel}
-Understands contribution over consumption: ${body.understandCommunity}
-  `.trim()
+  const html = `
+    <h2 style="color:#C6A962;margin:0 0 16px">🥋 Nueva Aplicación — Kung Fu Legacy</h2>
+    <table style="font-family:sans-serif;font-size:15px;color:#1a1a1a;border-collapse:collapse">
+      <tr><td style="padding:6px 16px 6px 0;color:#666">Nombre</td><td style="padding:6px 0"><strong>${fullName}</strong></td></tr>
+      <tr><td style="padding:6px 16px 6px 0;color:#666">Teléfono</td><td style="padding:6px 0">${phone}</td></tr>
+      <tr><td style="padding:6px 16px 6px 0;color:#666">Email</td><td style="padding:6px 0">${email}</td></tr>
+      <tr><td style="padding:6px 16px 6px 0;color:#666">Experiencia</td><td style="padding:6px 0">${experience}</td></tr>
+      <tr><td style="padding:6px 16px 6px 0;color:#666">Profesión / Lo que construye</td><td style="padding:6px 0">${profession}</td></tr>
+      <tr><td style="padding:6px 16px 6px 0;color:#666">Por qué quiere entrenar</td><td style="padding:6px 0">${whyTrain}</td></tr>
+      <tr><td style="padding:6px 16px 6px 0;color:#666">Lo que aporta</td><td style="padding:6px 0">${whatYouBring}</td></tr>
+      <tr><td style="padding:6px 16px 6px 0;color:#666">Metas</td><td style="padding:6px 0">${Array.isArray(developGoals) ? developGoals.join(', ') : developGoals}</td></tr>
+      <tr><td style="padding:6px 16px 6px 0;color:#666">Puede comprometerse</td><td style="padding:6px 0">${commitToTraining}</td></tr>
+      <tr><td style="padding:6px 16px 6px 0;color:#666">Dispuesto a ser guiado</td><td style="padding:6px 0">${acceptChallenge}</td></tr>
+      <tr><td style="padding:6px 16px 6px 0;color:#666">Puede viajar</td><td style="padding:6px 0">${willTravel}</td></tr>
+      <tr><td style="padding:6px 16px 6px 0;color:#666">Entiende comunidad</td><td style="padding:6px 0">${understandCommunity}</td></tr>
+    </table>
+  `
 
   try {
-    const res = await fetch(webhookUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        subject: 'New Brotherhood Application — Kung Fu Legacy',
-        emailBody,
-        source: 'kung-fu-legacy',
-        ...body,
-      }),
-    })
-
-    if (!res.ok) {
-      return NextResponse.json({ error: `WEBHOOK_STATUS_${res.status}` }, { status: 502 })
-    }
-
-    return NextResponse.json({ ok: true })
+    await Promise.all(
+      RECIPIENTS.map((to) =>
+        resend.emails.send({
+          from: 'Kung Fu Legacy <notificaciones@kungfu.house>',
+          to,
+          subject: `Nueva aplicación — ${fullName}`,
+          html,
+        })
+      )
+    )
   } catch (err) {
-    return NextResponse.json({ error: `FETCH_ERROR: ${err}` }, { status: 500 })
+    console.error('Resend error:', err)
   }
+
+  return NextResponse.json({ ok: true })
 }
