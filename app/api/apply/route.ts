@@ -3,7 +3,6 @@ import { Resend } from 'resend'
 
 const RECIPIENTS = [
   'rafaelgonzalezrosado@gmail.com',
-  'kungfuhousepr@gmail.com',
 ]
 
 export async function POST(req: NextRequest) {
