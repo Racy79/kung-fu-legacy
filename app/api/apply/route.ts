@@ -10,6 +10,11 @@ export async function POST(req: NextRequest) {
   const body = await req.json()
   const { fullName, phone, email, experience, profession, whyTrain, whatYouBring, developGoals, commitToTraining, acceptChallenge, willTravel, understandCommunity } = body
 
+  const encodedName = encodeURIComponent(fullName)
+  const encodedEmail = encodeURIComponent(email)
+  const acceptUrl = `https://thekungfulegacy.com/api/accept?name=${encodedName}&email=${encodedEmail}`
+  const rejectUrl = `https://thekungfulegacy.com/api/reject?name=${encodedName}&email=${encodedEmail}`
+
   const html = `
     <h2 style="color:#C6A962;margin:0 0 16px">🥋 New Application — Kung Fu Legacy</h2>
     <table style="font-family:sans-serif;font-size:15px;color:#1a1a1a;border-collapse:collapse">
@@ -26,6 +31,10 @@ export async function POST(req: NextRequest) {
       <tr><td style="padding:6px 16px 6px 0;color:#666">Will travel</td><td style="padding:6px 0">${willTravel}</td></tr>
       <tr><td style="padding:6px 16px 6px 0;color:#666">Understands community</td><td style="padding:6px 0">${understandCommunity}</td></tr>
     </table>
+    <div style="margin-top:32px;display:flex;gap:16px">
+      <a href="${acceptUrl}" style="background:#C6A962;color:#0B0B0B;padding:12px 28px;text-decoration:none;font-family:sans-serif;font-weight:bold;font-size:14px">Accept</a>
+      <a href="${rejectUrl}" style="background:#444;color:#fff;padding:12px 28px;text-decoration:none;font-family:sans-serif;font-weight:bold;font-size:14px;margin-left:16px">Reject</a>
+    </div>
   `
 
   try {
