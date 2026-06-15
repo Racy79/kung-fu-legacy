@@ -22,28 +22,28 @@ export default function TheRoom() {
         viewport={{ once: true, margin: '-80px' }}
       >
         <motion.p variants={fadeUp} className="label mb-14">
-          The Room
+          The Practice
         </motion.p>
 
         <motion.h2 variants={fadeUp} className="heading-lg mb-10">
-          You will know the moment you walk in.
+          This is not a class. It is not a program.
         </motion.h2>
 
         <motion.div variants={stagger} className="space-y-8 mb-20">
           <motion.p variants={fadeUp} className="body text-bone/70">
-            This is not a class. It is not an open session. There is no drop-in.
+            There is no drop-in. No shared curriculum on a fixed schedule. No managing a room of students at different levels.
           </motion.p>
           <motion.p variants={fadeUp} className="body text-bone/70">
-            The men here were selected. They earned the right to be corrected. They hold each other to a standard that most rooms never reach.
+            Private instruction means the session belongs entirely to the student in front of the instructor. The correction is direct. The progression is specific to where you actually are — not where a syllabus says you should be.
           </motion.p>
           <motion.p variants={fadeUp} className="kfl-pullquote">
-            When you walk in, you feel it immediately.
+            The instruction adapts to the student. Not the other way around.
           </motion.p>
           <motion.p variants={fadeUp} className="body text-bone/70">
-            Not intensity for its own sake. Presence. Structure. Men who take the work seriously — and take each other seriously.
+            This is the model through which serious Wing Chun has always been transmitted. Not distributed to a group. Given to an individual who has earned the right to receive it.
           </motion.p>
           <motion.p variants={fadeUp} className="kfl-pullquote kfl-pullquote--gold">
-            That is what has been missing.
+            Enrollment is limited. That limitation is the point.
           </motion.p>
         </motion.div>
 

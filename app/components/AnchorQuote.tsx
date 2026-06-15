@@ -26,9 +26,9 @@ export default function AnchorQuote() {
         <div className="w-px h-16 bg-gold/30 mx-auto mb-16" />
 
         <blockquote className="heading-lg text-center">
-          A structure cannot hold
+          Technique can be copied.
           <br className="hidden sm:block" />{' '}
-          <span className="text-bone/75 italic">what it was not built to carry.</span>
+          <span className="text-bone/75 italic">Transmission cannot.</span>
         </blockquote>
 
         {/* Bottom vertical rule */}

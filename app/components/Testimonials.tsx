@@ -57,7 +57,7 @@ export default function Testimonials() {
         viewport={{ once: true, margin: '-80px' }}
       >
         <motion.p variants={fadeUp} className="label mb-14">
-          From the Brotherhood
+          From Students
         </motion.p>
 
         <div className="w-px h-12 bg-gold/30 mb-14" />

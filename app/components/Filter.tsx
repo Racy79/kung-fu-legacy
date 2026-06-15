@@ -12,18 +12,18 @@ const stagger = {
 }
 
 const notForYou = [
-  'You are between stable commitments or looking for something to try.',
-  'You want technique. This is not technique-based instruction.',
-  'You are not ready to be corrected without resistance.',
-  'You want to take from this room more than you give.',
-  'You are not willing to be held to a standard by the men around you.',
+  'You are looking for something to try. Private instruction is not a trial.',
+  'You want to accumulate techniques. This instruction develops understanding, not inventory.',
+  'You are not prepared to receive direct correction without resistance.',
+  'You are unwilling to practice seriously between sessions — the work does not happen only in the room.',
+  'You are looking for personal development with martial arts as the vehicle. The art is the point here.',
 ]
 
 const forYou = [
-  'You have built something real and you are ready to go deeper than you can go alone.',
-  'You are the most capable man in most rooms — and that has started to feel like a ceiling.',
-  'You understand that what you bring matters as much as what you gain.',
-  'You understand that in a serious lineage, rank is earned — not assumed.',
+  'You have trained and reached the limit of what group instruction can give you.',
+  'You want to understand Wing Chun — not just perform it.',
+  'You are willing to be corrected directly and specifically, without explanation or defense.',
+  'You understand that in a serious lineage, what you receive is proportional to what you bring to it.',
   'You are ready to enter a lineage — not attend a program.',
 ]
 

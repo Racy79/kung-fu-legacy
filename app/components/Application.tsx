@@ -36,16 +36,16 @@ const INITIAL: FormData = {
   understandCommunity: '',
 }
 
-const GOALS = ['Structure', 'Sensitivity', 'Precision', 'Discipline', 'Brotherhood', 'Mastery']
+const GOALS = ['Structure', 'Sensitivity', 'Precision', 'Discipline', 'Instructor Development', 'Mastery']
 
 const QUALIFIERS: { field: keyof FormData; question: string }[] = [
   {
     field: 'commitToTraining',
-    question: 'This brotherhood demands consistent presence and full commitment — not when convenient, but as a standard. Are you in a place in your life where you can honor that?',
+    question: 'Private instruction requires consistent presence — not when convenient, but as a standard. Are you in a place in your life where you can honor that commitment?',
   },
   {
     field: 'acceptChallenge',
-    question: 'You will be corrected. Your assumptions will be challenged. The men around you will hold you to a standard. Are you ready to be led before you lead?',
+    question: 'You will be corrected directly and specifically. Your technique, your structure, your understanding of the principles — all of it is subject to correction. Are you prepared to receive that without resistance?',
   },
   {
     field: 'willTravel',
@@ -53,7 +53,7 @@ const QUALIFIERS: { field: keyof FormData; question: string }[] = [
   },
   {
     field: 'understandCommunity',
-    question: 'The men who enter this brotherhood are selected for the value they bring — not just what they seek. Do you understand that your role here is as much about contribution as it is about development?',
+    question: 'Serious instruction places demands on your time and independent practice — not only during sessions. Do you understand that the quality of your development between sessions determines what is possible during them?',
   },
 ]
 
@@ -163,7 +163,7 @@ export default function Application() {
             It is earned.
           </motion.p>
           <motion.p variants={fadeUp} className="body text-bone/65">
-            It is granted by the men already inside it.
+            Applications are reviewed by Rafael personally. Enrollment is limited and not guaranteed.
           </motion.p>
         </motion.div>
 
@@ -173,7 +173,7 @@ export default function Application() {
         </motion.p>
 
         <motion.p variants={fadeUp} className="body text-bone/55 mb-16">
-          Applications are reviewed. Entry is not guaranteed. If you are the right man, you will know it before you submit.
+          If this is what you have been looking for, you will know it before you submit.
         </motion.p>
 
         {/* ── Operational Clarity ───────────────────────────────────────── */}
@@ -183,9 +183,9 @@ export default function Application() {
           </motion.p>
           <motion.div variants={stagger} className="space-y-3 mb-8">
             {[
-              'One-on-one instruction. Weekly group session.',
-              'Structured progression through the complete system.',
-              'This is not remote. This is not a course.',
+              'Weekly private session. Monthly group training.',
+              'Direct correction. Personalized progression through the complete system.',
+              'This is not remote. This is not a course. This is instruction.',
             ].map((line, i) => (
               <motion.p key={i} variants={fadeUp} className="kfl-support text-bone/55">
                 {line}
@@ -193,7 +193,7 @@ export default function Application() {
             ))}
           </motion.div>
           <motion.p variants={fadeUp} className="kfl-pullquote text-bone/75">
-            Men who enter this brotherhood make a serious and ongoing financial commitment to the work.
+            Private instruction represents a serious and ongoing financial commitment. Enrollment is by application only.
           </motion.p>
         </motion.div>
 
@@ -305,25 +305,25 @@ export default function Application() {
               </div>
 
               <div>
-                <label className="label block mb-3">Why do you want to enter this brotherhood?</label>
+                <label className="label block mb-3">Why Wing Chun specifically, and why private instruction?</label>
                 <textarea
                   rows={5}
                   value={form.whyTrain}
                   onChange={e => set('whyTrain', e.target.value)}
                   className={`field resize-none ${errors.whyTrain ? '!border-gold/60' : ''}`}
-                  placeholder="Be specific. Not what you want to learn — why this, why now."
+                  placeholder="Be specific. Not why martial arts in general — why this system, and why now."
                 />
                 {errors.whyTrain && <p data-error className="mt-2 kfl-support text-gold">{errors.whyTrain}</p>}
               </div>
 
               <div>
-                <label className="label block mb-3">What do you bring to a group of men at this level?</label>
+                <label className="label block mb-3">Describe your current practice. What does serious training look like for you outside of formal sessions?</label>
                 <textarea
                   rows={5}
                   value={form.whatYouBring}
                   onChange={e => set('whatYouBring', e.target.value)}
                   className={`field resize-none ${errors.whatYouBring ? '!border-gold/60' : ''}`}
-                  placeholder="Skills, disciplines, experience, perspective. What makes you an asset to the men around you?"
+                  placeholder="How do you train on your own? What disciplines or practices have shaped how you approach serious study?"
                 />
                 {errors.whatYouBring && <p data-error className="mt-2 kfl-support text-gold">{errors.whatYouBring}</p>}
               </div>

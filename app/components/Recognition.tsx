@@ -27,27 +27,24 @@ export default function Recognition() {
         </motion.p>
 
         <motion.h2 variants={fadeUp} className="heading-lg mb-12">
-          You are not here because something is broken.
+          You are not looking for another class.
         </motion.h2>
 
         <motion.div variants={stagger} className="space-y-8">
           <motion.p variants={fadeUp} className="body text-bone/70">
-            You have built something real. You hold the standard. You have been doing this long enough that most of the people around you have become background. They respect you. They defer to you in the room.
+            You have trained. You have developed. At some point, group instruction reaches the limit of what it can give you — not because the instruction was poor, but because the format cannot do what individual transmission does.
           </motion.p>
           <motion.p variants={fadeUp} className="kfl-pullquote">
-            None of them can actually challenge you.
+            Technique can be taught in a class. Understanding requires direct transmission.
           </motion.p>
           <motion.p variants={fadeUp} className="body text-bone/70">
-            That is the absence you have been feeling. Not a gap in your training. Not a need for more structure. A room that has been empty for a long time. Men who are operating at the level you are. Who will tell you the truth. Who carry enough to have earned the right to say it.
+            What changes in private instruction is not the material. It is the quality of attention. Every correction is specific to you — your structure, your timing, your particular misunderstanding of the principle. There is no averaging. No managing a room. One instructor. One student. The art between them.
           </motion.p>
           <motion.p variants={fadeUp} className="body text-bone/70">
-            That kind of brotherhood does not happen by accident. It is built through shared practice, shared pressure, and time. It asks something real from the men inside it.
-          </motion.p>
-          <motion.p variants={fadeUp} className="body text-bone/70">
-            You have worked around the absence. Filled the space with output, with achievement, with forward motion. But you feel it.
+            This is how Wing Chun has always been transmitted at its deepest levels. Not distributed across a class. Passed directly — from someone who holds it to someone capable of receiving it.
           </motion.p>
           <motion.p variants={fadeUp} className="kfl-pullquote kfl-pullquote--gold">
-            Most men stop looking for it. They settle. You are still looking. That is why you are here.
+            If that is what you have been looking for, you are in the right place.
           </motion.p>
         </motion.div>
       </motion.div>

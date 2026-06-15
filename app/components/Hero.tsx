@@ -56,7 +56,7 @@ export default function Hero() {
             transition={{ duration: 0.9, ease: 'easeOut' }}
             className="kfl-pullquote text-bone/80 mb-10"
           >
-            You already know what is missing.
+            The art is not distributed here. It is transmitted.
           </motion.p>
 
           {/* Divider */}
@@ -73,10 +73,10 @@ export default function Hero() {
             className="space-y-5"
           >
             <p className="body max-w-sm">
-              Not structure. Not discipline. You have both.
+              Private Wing Chun instruction within the Moy Yat lineage.
             </p>
             <p className="body max-w-sm">
-              What you have not found is the men who carry the same weight.
+              Direct correction. Serious students. By application only.
             </p>
           </motion.div>
         </motion.div>

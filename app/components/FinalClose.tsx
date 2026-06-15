@@ -25,10 +25,10 @@ export default function FinalClose() {
         <div className="w-px h-16 bg-gold/25 mx-auto mb-20" />
 
         <p className="kfl-pullquote text-bone mb-6">
-          Some men are not looking for more information.
+          Some practitioners are not looking for more classes.
         </p>
         <p className="kfl-pullquote text-bone mb-20">
-          They are looking for the men.
+          They are looking for real instruction.
         </p>
 
         <button onClick={scrollToForm} className="btn">

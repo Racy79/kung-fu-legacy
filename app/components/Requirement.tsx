@@ -14,15 +14,15 @@ const stagger = {
 const requirements = [
   {
     label: 'Presence',
-    body: 'Physical, regular. This is not a course you manage around your schedule.',
+    body: 'Physical attendance is required. Private instruction cannot be approximated remotely or made up later.',
   },
   {
-    label: 'Openness',
-    body: 'You enter as a student. The men here have earned the right to hold you to a standard — and they will.',
+    label: 'Receptivity',
+    body: 'You enter as a student. Correction here is direct and specific. The ability to receive it without resistance is a precondition of entry, not an expectation after.',
   },
   {
-    label: 'Contribution',
-    body: 'What you bring to the men beside you matters as much as what you develop here.',
+    label: 'Practice',
+    body: 'What you do between sessions determines what is possible during them. Serious transmission requires serious independent work.',
   },
 ]
 

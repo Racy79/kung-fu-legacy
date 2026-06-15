@@ -79,7 +79,7 @@ export default function Legacy() {
 
         {/* ── Capacity ──────────────────────────────────────────────────────── */}
         <motion.p variants={fadeUp} className="body text-bone/55 mb-20">
-          This brotherhood holds a maximum of fifteen men.
+          Enrollment is intentionally limited. Private transmission requires it.
         </motion.p>
 
         {/* ── Training Image ─────────────────────────────────────────────────── */}

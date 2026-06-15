@@ -24,11 +24,11 @@ export default function DecisiveMoment() {
         <div className="w-px h-16 bg-gold/20 mx-auto mb-20" />
 
         <motion.p variants={fadeUp} className="kfl-pullquote text-bone mb-8 text-center">
-          You have been in rooms that were built for other men.
+          Group instruction reaches a natural limit.
         </motion.p>
 
         <motion.p variants={fadeUp} className="kfl-pullquote text-bone mb-16 text-center">
-          This one is not.
+          Private transmission does not.
         </motion.p>
 
         <motion.div variants={fadeUp} className="gold-line mb-16" />
@@ -37,11 +37,11 @@ export default function DecisiveMoment() {
           variants={fadeUp}
           className="body text-bone/65 text-center mb-6"
         >
-          You already know whether you belong here. Most men find a reason to wait — and call it discernment.
+          If you have trained seriously and found yourself wanting instruction that goes deeper than what a class can offer — that is not a common situation. Most practitioners never reach it.
         </motion.p>
 
         <motion.p variants={fadeUp} className="kfl-pullquote kfl-pullquote--gold text-center">
-          That is not patience. You have pressed against this ceiling before.
+          The application is the first step. It is also the first assessment.
         </motion.p>
 
         <div className="w-px h-16 bg-gold/20 mx-auto mt-20" />
