@@ -20,12 +20,6 @@ const lineage = [
 
 const inheritor = { name: 'Rafael Gonzalez', honorific: 'Moy Don Xùn' }
 
-const closing = [
-  'Refined through years of practice.',
-  'Tested through real students.',
-  'Preserved with intention.',
-]
-
 export default function Legacy() {
   return (
     <section className="section-pad bg-matte-black">
@@ -40,18 +34,11 @@ export default function Legacy() {
           Lineage
         </motion.p>
 
-        <motion.h2 variants={fadeUp} className="heading-lg mb-8">
-          Instruction within a living lineage.
+        <motion.h2 variants={fadeUp} className="heading-lg mb-20">
+          The instruction offered here comes through a direct lineage.
         </motion.h2>
 
-        <motion.p variants={fadeUp} className="kfl-pullquote text-bone/60 mb-20">
-          The system Rafael teaches was not assembled from multiple sources.<br />
-          It was received intact — through a direct line from Yip Man.
-        </motion.p>
-
         {/* ── Lineage Chain ─────────────────────────────────────────────────── */}
-
-        {/* Master chain: Yip Man (Ip Man) — Moy Yat — Moy Don */}
         <motion.div
           variants={stagger}
           className="flex items-center gap-0 flex-wrap mb-6"
@@ -71,21 +58,25 @@ export default function Legacy() {
           ))}
         </motion.div>
 
-        {/* Inheritor: Moy Don Xùn — alone below */}
         <motion.div variants={fadeUp} className="pl-1 mb-20">
           <p className="kfl-pullquote not-italic text-bone">{inheritor.name}</p>
           <p className="label mt-1">{inheritor.honorific}</p>
         </motion.div>
 
-        {/* ── Jui Pai explanation ───────────────────────────────────────────── */}
-        <motion.p variants={fadeUp} className="body text-bone/55 mb-20">
-          Jui Pai designates full transmission within the Moy Yat system — the complete art, not a portion of it. Rafael holds Jui Pai through Moy Don (Thornton Williams). Enrollment is limited.
-        </motion.p>
+        {/* ── Lineage meaning ───────────────────────────────────────────────── */}
+        <motion.div variants={stagger} className="space-y-6 mb-20">
+          <motion.p variants={fadeUp} className="body text-bone/55">
+            Rafael holds Jui Pai within this lineage — full transmission of the complete system.
+          </motion.p>
+          <motion.p variants={fadeUp} className="body text-bone/55">
+            Lineage matters not because it creates status. It matters because it preserves understanding. Each generation inherits more than movements. It inherits principles, methods, standards, and ways of thinking that cannot be separated from the art itself.
+          </motion.p>
+        </motion.div>
 
         {/* ── Training Image ─────────────────────────────────────────────────── */}
         <motion.div
           variants={fadeUp}
-          className="relative overflow-hidden mb-20 border border-gold/30"
+          className="relative overflow-hidden mb-0 border border-gold/30"
         >
           <Image
             src="/images/group-photo.jpg"
@@ -98,12 +89,6 @@ export default function Legacy() {
           <div className="absolute inset-0 bg-black/25" />
         </motion.div>
 
-        {/* ── Closing lines ─────────────────────────────────────────────────── */}
-        <motion.div variants={stagger} className="space-y-4">
-          <motion.p variants={fadeUp} className="body text-bone/65">
-            The system is intact. The instruction is direct. The lineage is active.
-          </motion.p>
-        </motion.div>
       </motion.div>
     </section>
   )

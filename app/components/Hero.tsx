@@ -2,6 +2,8 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { trackApplyClick } from '../lib/analytics'
+
 const fadeUp = { hidden: { opacity: 0, y: 28 }, show: { opacity: 1, y: 0 } }
 
 const stagger = {
@@ -11,6 +13,15 @@ const stagger = {
 }
 
 export default function Hero() {
+  const scrollToForm = () => {
+    trackApplyClick()
+    const el = document.getElementById('apply-form')
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY - 100
+      window.scrollTo({ top, behavior: 'smooth' })
+    }
+  }
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
 
@@ -54,9 +65,18 @@ export default function Hero() {
           <motion.p
             variants={fadeUp}
             transition={{ duration: 0.9, ease: 'easeOut' }}
-            className="kfl-pullquote text-bone/80 mb-10"
+            className="kfl-pullquote text-bone/80 mb-4"
           >
-            Most instructors teach techniques. I teach understanding.
+            Private Wing Chun Apprenticeship
+          </motion.p>
+
+          {/* Sub */}
+          <motion.p
+            variants={fadeUp}
+            transition={{ duration: 0.9, ease: 'easeOut' }}
+            className="body text-bone/55 max-w-sm mb-10"
+          >
+            For individuals who value mastery, direct mentorship, and the preservation of traditional knowledge.
           </motion.p>
 
           {/* Divider */}
@@ -70,14 +90,35 @@ export default function Hero() {
           <motion.div
             variants={fadeUp}
             transition={{ duration: 0.9, ease: 'easeOut' }}
-            className="space-y-5"
+            className="space-y-3 mb-10"
           >
             <p className="body max-w-sm">
-              Private Wing Chun instruction. One student. One instructor.
+              This is not a martial arts school.
             </p>
-            <p className="body max-w-sm">
-              Direct correction. Personalized progression. By application only.
+            <p className="body text-bone/60 max-w-sm">
+              Private instruction within the Moy Yat lineage for serious practitioners seeking a deeper understanding of the art.
             </p>
+          </motion.div>
+
+          {/* List */}
+          <motion.div
+            variants={fadeUp}
+            transition={{ duration: 0.9, ease: 'easeOut' }}
+            className="space-y-1 mb-12"
+          >
+            {['Direct correction.', 'Personalized progression.', 'Traditional transmission.', 'By application only.'].map((item, i) => (
+              <p key={i} className="kfl-support text-bone/50">{item}</p>
+            ))}
+          </motion.div>
+
+          {/* CTA */}
+          <motion.div
+            variants={fadeUp}
+            transition={{ duration: 0.9, ease: 'easeOut' }}
+          >
+            <button onClick={scrollToForm} className="btn">
+              Request Entry
+            </button>
           </motion.div>
         </motion.div>
       </div>

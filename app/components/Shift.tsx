@@ -11,10 +11,10 @@ const stagger = {
   show: { transition: { staggerChildren: 0.2 } },
 }
 
-const principles = [
-  { accent: 'Structure', rest: 'before movement.' },
-  { accent: 'Sensitivity', rest: 'before speed.' },
-  { accent: 'Control', rest: 'before force.' },
+const pairs = [
+  { belief: 'Students believe they are learning positions.', reality: 'They are learning structure.' },
+  { belief: 'Students believe they are learning drills.', reality: 'They are learning perception.' },
+  { belief: 'Students believe they are learning applications.', reality: 'They are learning judgment.' },
 ]
 
 export default function Shift() {
@@ -28,39 +28,36 @@ export default function Shift() {
         viewport={{ once: true, margin: '-80px' }}
       >
         <motion.p variants={fadeUp} className="label mb-14">
-          The System
+          The Invisible Curriculum
         </motion.p>
 
         <motion.h2 variants={fadeUp} className="heading-lg mb-8">
-          This is not a collection of techniques.
+          Most students believe they are learning techniques.
         </motion.h2>
 
-        <motion.p variants={fadeUp} className="kfl-pullquote--authority mb-24">
-          This is a system.
+        <motion.p variants={fadeUp} className="kfl-pullquote--authority mb-20">
+          In reality, they are developing capacities.
         </motion.p>
 
-        <motion.div variants={stagger} className="mb-24">
-          {principles.map(({ accent, rest }, i) => (
+        <motion.div variants={stagger} className="mb-20">
+          {pairs.map(({ belief, reality }, i) => (
             <motion.div
               key={i}
               variants={fadeUp}
-              className="flex items-baseline gap-4 py-7 border-b border-bone/8 last:border-0"
+              className="py-8 border-b border-bone/8 last:border-0"
             >
-              <span className="kfl-pullquote--authority text-bone/80">{accent}</span>
-              <span className="body text-bone/55">{rest}</span>
+              <p className="body text-bone/45 mb-2">{belief}</p>
+              <p className="kfl-pullquote--authority text-bone">{reality}</p>
             </motion.div>
           ))}
         </motion.div>
 
-        <motion.div variants={stagger} className="space-y-5">
+        <motion.div variants={stagger} className="space-y-4">
           <motion.p variants={fadeUp} className="body text-bone/70">
-            You are not learning what to do.
+            The techniques are the vehicle.
           </motion.p>
-          <motion.p
-            variants={fadeUp}
-            className="kfl-pullquote text-bone"
-          >
-            You are building understanding.
+          <motion.p variants={fadeUp} className="kfl-pullquote text-bone">
+            The development is the destination.
           </motion.p>
         </motion.div>
       </motion.div>

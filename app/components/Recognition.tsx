@@ -11,7 +11,6 @@ const stagger = {
   show: { transition: { staggerChildren: 0.18 } },
 }
 
-
 export default function Recognition() {
   return (
     <section className="section-pad bg-matte-black">
@@ -22,29 +21,28 @@ export default function Recognition() {
         whileInView="show"
         viewport={{ once: true, margin: '-80px' }}
       >
-        <motion.p variants={fadeUp} className="label mb-14">
-          Recognition
-        </motion.p>
-
         <motion.h2 variants={fadeUp} className="heading-lg mb-12">
-          You are not looking for another class.
+          In a world of mass-produced instruction, some forms of knowledge are still best transmitted directly.
         </motion.h2>
 
         <motion.div variants={stagger} className="space-y-8">
-          <motion.p variants={fadeUp} className="body text-bone/70">
-            Group instruction is designed for groups. The instructor manages the room. Corrections are necessarily general. Progression moves at the pace of a shared curriculum, not at the pace of you. That format has a ceiling.
-          </motion.p>
-          <motion.p variants={fadeUp} className="kfl-pullquote">
-            Private instruction removes the ceiling.
-          </motion.p>
-          <motion.p variants={fadeUp} className="body text-bone/70">
-            Every correction in a private session is specific to your body, your structure, your particular misunderstanding of a principle. There is no averaging. No managing a room. The session is entirely yours, and the instruction is built entirely around where you actually are.
+          <motion.p variants={fadeUp} className="kfl-pullquote text-bone/60">
+            Wing Chun was never meant to be consumed.<br />
+            It was meant to be studied.<br />
+            The difference is significant.
           </motion.p>
           <motion.p variants={fadeUp} className="body text-bone/70">
-            When instruction is that specific, development accelerates. Not because the material is different — because the attention is undivided.
+            Most modern instruction is designed to accommodate groups. It must serve beginners and advanced students simultaneously. It must move at a pace that works for everyone.
+          </motion.p>
+          <motion.p variants={fadeUp} className="body text-bone/70">
+            Private instruction solves a different problem. It allows the student and instructor to focus entirely on the student&apos;s development.
+          </motion.p>
+          <motion.p variants={fadeUp} className="body text-bone/70">
+            Every correction belongs to you. Every lesson is shaped around your strengths, weaknesses, questions, and progress.
           </motion.p>
           <motion.p variants={fadeUp} className="kfl-pullquote kfl-pullquote--gold">
-            If you want to understand Wing Chun — not just train in it — this is the model that makes that possible.
+            The objective is not simply to learn more.<br />
+            The objective is to understand more deeply.
           </motion.p>
         </motion.div>
       </motion.div>

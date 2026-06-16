@@ -11,21 +11,6 @@ const stagger = {
   show: { transition: { staggerChildren: 0.18 } },
 }
 
-const requirements = [
-  {
-    label: 'Presence',
-    body: 'Physical attendance is required. Private instruction cannot be approximated remotely or made up later.',
-  },
-  {
-    label: 'Receptivity',
-    body: 'You enter as a student. Correction here is direct and specific. The ability to receive it without resistance is a precondition of entry, not an expectation after.',
-  },
-  {
-    label: 'Practice',
-    body: 'What you do between sessions determines what is possible during them. Serious transmission requires serious independent work.',
-  },
-]
-
 export default function Requirement() {
   return (
     <section className="section-pad bg-matte-black border-t border-bone/5">
@@ -37,33 +22,25 @@ export default function Requirement() {
         viewport={{ once: true, margin: '-80px' }}
       >
         <motion.p variants={fadeUp} className="label mb-14">
-          What this requires
+          Instructor Development
         </motion.p>
 
-        <motion.h2 variants={fadeUp} className="heading-lg mb-8">
-          Three things. Not in addition to what you carry.
+        <motion.h2 variants={fadeUp} className="heading-lg mb-12">
+          The primary purpose of Kung Fu Legacy is private instruction.
         </motion.h2>
 
-        <motion.p variants={fadeUp} className="kfl-pullquote text-bone/60 mb-20">
-          As a condition of entry.
-        </motion.p>
-
-        <motion.div variants={stagger} className="space-y-0 divide-y divide-bone/[0.06]">
-          {requirements.map(({ label, body }, i) => (
-            <motion.div key={i} variants={fadeUp} className="flex gap-8 py-10">
-              <div className="w-px bg-gold/30 flex-shrink-0" />
-              <div>
-                <p className="kfl-h3 font-normal text-bone mb-2">{label}</p>
-                <p className="kfl-support text-bone/55">{body}</p>
-              </div>
-            </motion.div>
-          ))}
+        <motion.div variants={stagger} className="space-y-6">
+          <motion.p variants={fadeUp} className="body text-bone/70">
+            However, exceptional students may eventually be invited into instructor development.
+          </motion.p>
+          <motion.p variants={fadeUp} className="body text-bone/70">
+            This path is not purchased. It is earned through character, consistency, understanding, teaching ability, and long-term commitment.
+          </motion.p>
+          <motion.p variants={fadeUp} className="kfl-pullquote text-bone/60">
+            Most students will never pursue this path.<br />
+            Some will.
+          </motion.p>
         </motion.div>
-
-        <motion.p variants={fadeUp} className="label text-bone/40 mt-14">
-          These are not expectations. They are the conditions of entry.
-        </motion.p>
-
       </motion.div>
     </section>
   )

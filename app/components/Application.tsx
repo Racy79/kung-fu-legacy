@@ -154,46 +154,16 @@ export default function Application() {
           Application
         </motion.p>
 
-        <motion.h2 variants={fadeUp} className="heading-lg mb-8">
-          Entry is not given.
+        <motion.h2 variants={fadeUp} className="heading-lg mb-12">
+          Enrollment is intentionally limited because private instruction requires attention.
         </motion.h2>
 
-        <motion.div variants={stagger} className="space-y-3 mb-8">
+        <motion.div variants={stagger} className="space-y-5 mb-16">
           <motion.p variants={fadeUp} className="body text-bone/65">
-            It is earned.
+            Applications are reviewed personally by Rafael Gonzalez. If accepted, you will be contacted directly.
           </motion.p>
           <motion.p variants={fadeUp} className="body text-bone/65">
-            Applications are reviewed by Rafael personally. Enrollment is limited and not guaranteed.
-          </motion.p>
-        </motion.div>
-
-        <motion.p variants={fadeUp} className="kfl-pullquote text-bone/75 mb-10">
-          What you are committing to is not a training schedule.<br />
-          It is a standard.
-        </motion.p>
-
-        <motion.p variants={fadeUp} className="body text-bone/55 mb-16">
-          If this is what you have been looking for, you will know it before you submit.
-        </motion.p>
-
-        {/* ── Operational Clarity ───────────────────────────────────────── */}
-        <motion.div variants={stagger} className="mb-16">
-          <motion.p variants={fadeUp} className="label mb-6">
-            What membership includes
-          </motion.p>
-          <motion.div variants={stagger} className="space-y-3 mb-8">
-            {[
-              'Weekly private session. Monthly group training.',
-              'Direct correction. Personalized progression through the complete system.',
-              'This is not remote. This is not a course. This is instruction.',
-            ].map((line, i) => (
-              <motion.p key={i} variants={fadeUp} className="kfl-support text-bone/55">
-                {line}
-              </motion.p>
-            ))}
-          </motion.div>
-          <motion.p variants={fadeUp} className="kfl-pullquote text-bone/75">
-            Private instruction represents a serious and ongoing financial commitment. Enrollment is by application only.
+            This is not a trial class. This is an ongoing apprenticeship built around development, accountability, and understanding.
           </motion.p>
         </motion.div>
 

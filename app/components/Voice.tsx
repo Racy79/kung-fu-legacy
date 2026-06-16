@@ -12,10 +12,10 @@ const stagger = {
 }
 
 const lines = [
-  'Most instructors teach you what to do. Some can teach you how to do it. Very few can explain the architecture beneath the system — why each principle exists, how the elements connect, what the art is actually developing in you. That is what I teach.',
-  'My instruction is grounded in the Moy Yat lineage through Thornton Williams (Moy Don). I hold Jui Pai within that lineage — the full transmission of the system, including the elements most students never reach.',
-  'Sessions are private. One student. One instructor. No shared schedule, no curriculum moving at the pace of a group, no correction averaged across a room. Every session is built around where you actually are.',
-  'Some students who develop serious competence may eventually be invited into instructor development. That is not the expectation at entry. The expectation at entry is that you want to understand Wing Chun — not just train in it.',
+  'Throughout my years of training and teaching, I became increasingly aware of a problem.',
+  'Many practitioners know what to do. Far fewer understand why. They learn forms without understanding their purpose. They learn drills without understanding what those drills are developing. They learn applications without understanding the principles that make them work.',
+  'My work is helping students bridge that gap. Not by teaching more techniques. But by helping them understand the architecture beneath the art.',
+  'The goal is not accumulation. The goal is understanding.',
   'If that is what you are looking for, apply.',
 ]
 
@@ -30,7 +30,7 @@ export default function Voice() {
         viewport={{ once: true, margin: '-80px' }}
       >
         <motion.p variants={fadeUp} className="label mb-14">
-          From the Instructor
+          From Rafael
         </motion.p>
 
         {/* Portrait */}

@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 22 },
@@ -12,10 +11,11 @@ const stagger = {
   show: { transition: { staggerChildren: 0.18 } },
 }
 
-const pillars = [
-  { headline: 'Structure is built.', sub: 'In the body. In every technique.' },
-  { headline: 'Sensitivity is developed.', sub: 'In contact. In what stands before you.' },
-  { headline: 'Discipline is lived.', sub: 'Not performed.' },
+const distinctions = [
+  'Every correction is personal.',
+  'Every lesson is specific.',
+  'Every weakness is addressed directly.',
+  'Every misunderstanding can be explored completely.',
 ]
 
 export default function Integration() {
@@ -29,59 +29,33 @@ export default function Integration() {
         viewport={{ once: true, margin: '-80px' }}
       >
         <motion.p variants={fadeUp} className="label mb-14">
-          Integration
+          Why Private Instruction
         </motion.p>
 
         <motion.h2 variants={fadeUp} className="heading-lg mb-8">
-          Qualities most training ignores.
+          Group instruction is valuable.<br />Private instruction is different.
         </motion.h2>
 
         <motion.p variants={fadeUp} className="kfl-pullquote text-bone/65 mb-20">
-          Not force. Not speed. Foundation.
+          The material may be the same.<br />The attention is not.
         </motion.p>
 
-        {/* Core attributes */}
-        <motion.div variants={stagger} className="space-y-7 mb-20">
-          {['Your structure.', 'Your discipline.', 'Your awareness.'].map((text, i) => (
-            <motion.p key={i} variants={fadeUp} className="kfl-pullquote--authority">
-              {text}
-            </motion.p>
-          ))}
-        </motion.div>
-
-        <motion.div variants={fadeUp} className="gold-line mb-20" />
-
-        <motion.p variants={fadeUp} className="kfl-pullquote kfl-pullquote--gold mb-20">
-          What is trained here changes how you move, respond, and carry structure under pressure.
+        <motion.p variants={fadeUp} className="label mb-10">
+          In private instruction:
         </motion.p>
 
-        {/* Pillars */}
-        <motion.div variants={stagger} className="space-y-10">
-          {pillars.map(({ headline, sub }, i) => (
-            <motion.div key={i} variants={fadeUp} className="flex gap-6">
+        <motion.div variants={stagger} className="space-y-0 divide-y divide-bone/[0.06] mb-20">
+          {distinctions.map((item, i) => (
+            <motion.div key={i} variants={fadeUp} className="flex gap-6 py-7">
               <div className="w-px bg-gold/25 flex-shrink-0" />
-              <div>
-                <p className="kfl-pullquote not-italic text-bone mb-1">{headline}</p>
-                <p className="kfl-support text-bone/55">{sub}</p>
-              </div>
+              <p className="kfl-pullquote--authority text-bone/80">{item}</p>
             </motion.div>
           ))}
         </motion.div>
 
-        {/* ── Training Image ─────────────────────────────────────────────────── */}
-        <motion.div
-          variants={fadeUp}
-          className="relative h-72 md:h-[520px] overflow-hidden mt-20"
-        >
-          <Image
-            src="/images/50A5A5C3-6999-4E09-8721-7C69350B934A.png"
-            alt="Rafael Gonzalez — Kung Fu Legacy"
-            fill
-            quality={100}
-            className="object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-black/10" />
-        </motion.div>
+        <motion.p variants={fadeUp} className="kfl-pullquote kfl-pullquote--gold">
+          The goal is not more information.<br />The goal is greater clarity.
+        </motion.p>
       </motion.div>
     </section>
   )

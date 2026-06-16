@@ -25,10 +25,16 @@ export default function FinalClose() {
         <div className="w-px h-16 bg-gold/25 mx-auto mb-20" />
 
         <p className="kfl-pullquote text-bone mb-6">
-          Some practitioners are not looking for more classes.
+          Some people seek information.
         </p>
-        <p className="kfl-pullquote text-bone mb-20">
-          They are looking for real instruction.
+        <p className="kfl-pullquote text-bone mb-6">
+          Others seek understanding.
+        </p>
+        <p className="kfl-pullquote text-bone/60 mb-6">
+          The difference is measured over years.
+        </p>
+        <p className="kfl-pullquote text-bone/60 mb-20">
+          Kung Fu Legacy exists for those willing to pursue the latter.
         </p>
 
         <button onClick={scrollToForm} className="btn">

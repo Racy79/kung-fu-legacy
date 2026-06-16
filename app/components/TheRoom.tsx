@@ -11,6 +11,15 @@ const stagger = {
   show: { transition: { staggerChildren: 0.18 } },
 }
 
+const qualities = [
+  'Judgment.',
+  'Timing.',
+  'Perception.',
+  'Sensitivity.',
+  'Control.',
+  'Understanding.',
+]
+
 export default function TheRoom() {
   return (
     <section className="section-pad bg-espresso/10">
@@ -22,32 +31,35 @@ export default function TheRoom() {
         viewport={{ once: true, margin: '-80px' }}
       >
         <motion.p variants={fadeUp} className="label mb-14">
-          The Practice
+          The Pursuit of Mastery
         </motion.p>
 
         <motion.h2 variants={fadeUp} className="heading-lg mb-10">
-          This is not a class. It is not a program.
+          Most people approach martial arts as a collection of techniques.
         </motion.h2>
 
-        <motion.div variants={stagger} className="space-y-8 mb-20">
+        <motion.div variants={stagger} className="space-y-8 mb-16">
           <motion.p variants={fadeUp} className="body text-bone/70">
-            There is no drop-in. No shared curriculum on a fixed schedule. No managing a room of students at different levels.
+            The serious practitioner eventually discovers that techniques are only the surface. Beneath them exists something more valuable.
           </motion.p>
+
+          <motion.div variants={stagger} className="space-y-3 pl-6 border-l border-gold/20">
+            {qualities.map((q, i) => (
+              <motion.p key={i} variants={fadeUp} className="kfl-pullquote--authority text-bone/80">
+                {q}
+              </motion.p>
+            ))}
+          </motion.div>
+
           <motion.p variants={fadeUp} className="body text-bone/70">
-            Private instruction means the session belongs entirely to the student in front of the instructor. The correction is direct. The progression is specific to where you actually are — not where a syllabus says you should be.
+            These qualities cannot be downloaded. They cannot be rushed. They are developed through study, practice, correction, and time.
           </motion.p>
-          <motion.p variants={fadeUp} className="kfl-pullquote">
-            The instruction adapts to the student. Not the other way around.
-          </motion.p>
-          <motion.p variants={fadeUp} className="body text-bone/70">
-            The session adapts to your structure, your gaps, your development. What you misunderstand specifically gets corrected specifically. An instructor who is fully present with one student cannot be fully present with twenty.
-          </motion.p>
+
           <motion.p variants={fadeUp} className="kfl-pullquote kfl-pullquote--gold">
-            Private sessions are limited by design. That is what makes them private.
+            This is why serious practitioners throughout history sought direct mentorship. Not because information was unavailable. Because understanding requires guidance.
           </motion.p>
         </motion.div>
 
-        {/* ── The Brotherhood ───────────────────────────────────────────────── */}
         <motion.div
           variants={fadeUp}
           className="relative overflow-hidden"

@@ -11,65 +11,50 @@ const stagger = {
   show: { transition: { staggerChildren: 0.15 } },
 }
 
-const notForYou = [
-  'You are looking for something to try. Private instruction is not a trial.',
-  'You want to accumulate techniques. This instruction develops understanding, not inventory.',
-  'You are not prepared to receive direct correction without resistance.',
-  'You are unwilling to practice seriously between sessions — the work does not happen only in the room.',
-  'You are looking for personal development with martial arts as the vehicle. The art is the point here.',
-]
-
-const forYou = [
-  'You have trained and reached the limit of what group instruction can give you.',
-  'You want to understand Wing Chun — not just perform it.',
-  'You are willing to be corrected directly and specifically, without explanation or defense.',
-  'You understand that what you develop is proportional to how seriously you work between sessions.',
-  'You are looking for an instructor who can explain why — not just demonstrate what.',
+const values = [
+  'Mastery.',
+  'Craftsmanship.',
+  'Tradition.',
+  'Direct mentorship.',
+  'Personal responsibility.',
+  'Long-term development.',
 ]
 
 export default function Filter() {
   return (
     <section className="section-pad bg-espresso/15">
       <motion.div
-        className="max-w-4xl mx-auto"
+        className="max-w-2xl mx-auto"
         variants={stagger}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, margin: '-80px' }}
       >
-        <div className="grid md:grid-cols-2 gap-16 md:gap-28">
+        <motion.p variants={fadeUp} className="label mb-14">
+          Who This Is For
+        </motion.p>
 
-          {/* Not for you */}
-          <motion.div variants={fadeUp}>
-            <p className="label mb-12">
-              This is not for you if:
-            </p>
-            <ul className="space-y-7">
-              {notForYou.map((item, i) => (
-                <li key={i} className="flex items-start gap-5">
-                  <span className="mt-2.5 w-1 h-1 rounded-full bg-bone/30 flex-shrink-0" />
-                  <p className="body text-bone/80">{item}</p>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+        <motion.h2 variants={fadeUp} className="heading-lg mb-12">
+          This is for individuals who value:
+        </motion.h2>
 
-          {/* For you */}
-          <motion.div variants={fadeUp}>
-            <p className="label mb-12">
-              This is for you if:
-            </p>
-            <ul className="space-y-7">
-              {forYou.map((item, i) => (
-                <li key={i} className="flex items-start gap-5">
-                  <span className="mt-2.5 w-1 h-1 rounded-full bg-bone/30 flex-shrink-0" />
-                  <p className="body text-bone/80">{item}</p>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+        <motion.div variants={stagger} className="space-y-0 divide-y divide-bone/[0.06] mb-20">
+          {values.map((item, i) => (
+            <motion.div key={i} variants={fadeUp} className="flex items-center gap-6 py-6">
+              <div className="w-px h-6 bg-gold/25 flex-shrink-0" />
+              <p className="kfl-pullquote--authority text-bone/80">{item}</p>
+            </motion.div>
+          ))}
+        </motion.div>
 
-        </div>
+        <motion.div variants={stagger} className="space-y-5">
+          <motion.p variants={fadeUp} className="body text-bone/70">
+            You do not need previous martial arts experience.
+          </motion.p>
+          <motion.p variants={fadeUp} className="body text-bone/70">
+            You do need seriousness. You do need commitment. And you do need a genuine desire to learn.
+          </motion.p>
+        </motion.div>
       </motion.div>
     </section>
   )
