@@ -11,12 +11,14 @@ const stagger = {
   show: { transition: { staggerChildren: 0.2 } },
 }
 
-const lines = [
-  'Throughout my years of training and teaching, I became increasingly aware of a problem.',
-  'Many practitioners know what to do. Far fewer understand why. They learn forms without understanding their purpose. They learn drills without understanding what those drills are developing. They learn applications without understanding the principles that make them work.',
-  'My work is helping students bridge that gap. Not by teaching more techniques. But by helping them understand the architecture beneath the art.',
-  'The goal is not accumulation. The goal is understanding.',
-  'If that is what you are looking for, apply.',
+const capacities = [
+  'Perception.',
+  'Sensitivity.',
+  'Timing.',
+  'Distance.',
+  'Adaptation.',
+  'Judgment.',
+  'Understanding.',
 ]
 
 export default function Voice() {
@@ -51,22 +53,73 @@ export default function Voice() {
         <div className="w-px h-12 bg-gold/30 mb-14" />
 
         <motion.div variants={stagger} className="space-y-8">
-          {lines.slice(0, -1).map((line, i) => (
-            <motion.p
-              key={i}
-              variants={fadeUp}
-              className={i === 0 ? 'kfl-pullquote text-bone' : 'kfl-pullquote text-bone/80'}
-            >
-              {line}
-            </motion.p>
-          ))}
+
+          <motion.p variants={fadeUp} className="body text-bone/70">
+            Like many practitioners, I spent years learning forms, drills, applications, and techniques.
+          </motion.p>
+
+          <motion.p variants={fadeUp} className="body text-bone/70">
+            Over time I noticed something that troubled me. Many skilled practitioners could perform the movements, yet struggled to explain the deeper reasoning behind them. They knew what to do. Some knew how to do it. Very few could clearly explain why.
+          </motion.p>
+
+          <motion.p variants={fadeUp} className="body text-bone/70">
+            The longer I trained, the more I realized that the most important lessons in the system were often the least discussed.
+          </motion.p>
+
+          <motion.div variants={fadeUp} className="space-y-3 pl-6 border-l border-bone/15">
+            <p className="body text-bone/55">Students learned forms, but rarely discussed what those forms were trying to develop.</p>
+            <p className="body text-bone/55">Students learned drills, but rarely discussed the capacities being cultivated through those drills.</p>
+            <p className="body text-bone/55">Students learned applications, but rarely discussed the principles connecting them together.</p>
+          </motion.div>
+
+          <motion.p variants={fadeUp} className="kfl-pullquote text-bone">
+            This became an obsession for me.
+          </motion.p>
+
+          <motion.p variants={fadeUp} className="body text-bone/70">
+            Not simply learning the system. Understanding it. I began spending years examining how the pieces connected. Why certain things were taught first. Why other things appeared later. Why concepts repeated themselves throughout the curriculum. Why lessons introduced in one area of training reappeared years later in another.
+          </motion.p>
+
+          <motion.p variants={fadeUp} className="kfl-pullquote text-bone/60">
+            Eventually I came to a conclusion:
+          </motion.p>
+
+          <motion.p variants={fadeUp} className="kfl-pullquote text-bone">
+            Most practitioners are not merely learning techniques. They are developing capacities.
+          </motion.p>
+
+          <motion.div variants={stagger} className="space-y-2 pl-6 border-l border-gold/25">
+            {capacities.map((c, i) => (
+              <motion.p key={i} variants={fadeUp} className="kfl-pullquote--authority text-bone/80">
+                {c}
+              </motion.p>
+            ))}
+          </motion.div>
+
+          <motion.p variants={fadeUp} className="body text-bone/70">
+            The techniques are important. But they are not the destination. They are the vehicle.
+          </motion.p>
+
+          <motion.p variants={fadeUp} className="body text-bone/70">
+            Today, my greatest passion is helping students see what many practitioners spend decades overlooking. Not simply how to perform the art. But how to understand it.
+          </motion.p>
+
+          <motion.p variants={fadeUp} className="kfl-pullquote kfl-pullquote--gold">
+            Because when understanding improves, everything else improves with it.
+          </motion.p>
+
         </motion.div>
 
         <motion.div variants={fadeUp} className="gold-line mt-14 mb-14" />
 
-        <motion.p variants={fadeUp} className="kfl-pullquote--authority">
-          {lines[lines.length - 1]}
-        </motion.p>
+        <motion.div variants={stagger} className="space-y-4">
+          <motion.p variants={fadeUp} className="kfl-pullquote--authority">
+            My goal is not to create students who depend on me.
+          </motion.p>
+          <motion.p variants={fadeUp} className="kfl-pullquote--authority">
+            My goal is to help students see the art clearly enough to continue growing long after the lesson ends.
+          </motion.p>
+        </motion.div>
 
         <div className="w-px h-12 bg-gold/30 mt-14" />
       </motion.div>
