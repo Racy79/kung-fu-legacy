@@ -24,11 +24,11 @@ export default function DecisiveMoment() {
         <div className="w-px h-16 bg-gold/20 mx-auto mb-20" />
 
         <motion.p variants={fadeUp} className="kfl-pullquote text-bone mb-8 text-center">
-          Group instruction reaches a natural limit.
+          Group instruction is designed for groups.
         </motion.p>
 
         <motion.p variants={fadeUp} className="kfl-pullquote text-bone mb-16 text-center">
-          Private transmission does not.
+          Private instruction is designed for you.
         </motion.p>
 
         <motion.div variants={fadeUp} className="gold-line mb-16" />
@@ -37,7 +37,7 @@ export default function DecisiveMoment() {
           variants={fadeUp}
           className="body text-bone/65 text-center mb-6"
         >
-          If you have trained seriously and found yourself wanting instruction that goes deeper than what a class can offer — that is not a common situation. Most practitioners never reach it.
+          The instructor manages a room. Corrections are general. The curriculum moves at the pace of the group. At some point, that format has given you everything it can. Private instruction removes that ceiling — every session is specific to you, every correction addresses your actual gaps, development is not held to anyone else&apos;s pace.
         </motion.p>
 
         <motion.p variants={fadeUp} className="kfl-pullquote kfl-pullquote--gold text-center">

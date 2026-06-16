@@ -56,7 +56,7 @@ export default function Hero() {
             transition={{ duration: 0.9, ease: 'easeOut' }}
             className="kfl-pullquote text-bone/80 mb-10"
           >
-            The art is not distributed here. It is transmitted.
+            Most instructors teach techniques. I teach understanding.
           </motion.p>
 
           {/* Divider */}
@@ -73,10 +73,10 @@ export default function Hero() {
             className="space-y-5"
           >
             <p className="body max-w-sm">
-              Private Wing Chun instruction within the Moy Yat lineage.
+              Private Wing Chun instruction. One student. One instructor.
             </p>
             <p className="body max-w-sm">
-              Direct correction. Serious students. By application only.
+              Direct correction. Personalized progression. By application only.
             </p>
           </motion.div>
         </motion.div>

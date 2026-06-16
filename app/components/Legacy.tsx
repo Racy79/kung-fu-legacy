@@ -37,16 +37,16 @@ export default function Legacy() {
         viewport={{ once: true, margin: '-80px' }}
       >
         <motion.p variants={fadeUp} className="label mb-14">
-          Legacy
+          Lineage
         </motion.p>
 
         <motion.h2 variants={fadeUp} className="heading-lg mb-8">
-          Built on direct transmission.
+          Instruction within a living lineage.
         </motion.h2>
 
         <motion.p variants={fadeUp} className="kfl-pullquote text-bone/60 mb-20">
-          This is not learned casually.<br />
-          It is passed, refined, and earned.
+          The system Rafael teaches was not assembled from multiple sources.<br />
+          It was received intact — through a direct line from Yip Man.
         </motion.p>
 
         {/* ── Lineage Chain ─────────────────────────────────────────────────── */}
@@ -77,9 +77,9 @@ export default function Legacy() {
           <p className="label mt-1">{inheritor.honorific}</p>
         </motion.div>
 
-        {/* ── Capacity ──────────────────────────────────────────────────────── */}
+        {/* ── Jui Pai explanation ───────────────────────────────────────────── */}
         <motion.p variants={fadeUp} className="body text-bone/55 mb-20">
-          Enrollment is intentionally limited. Private transmission requires it.
+          Jui Pai designates full transmission within the Moy Yat system — the complete art, not a portion of it. Rafael holds Jui Pai through Moy Don (Thornton Williams). Enrollment is limited.
         </motion.p>
 
         {/* ── Training Image ─────────────────────────────────────────────────── */}
@@ -100,11 +100,9 @@ export default function Legacy() {
 
         {/* ── Closing lines ─────────────────────────────────────────────────── */}
         <motion.div variants={stagger} className="space-y-4">
-          {closing.map((text, i) => (
-            <motion.p key={i} variants={fadeUp} className="body text-bone/65">
-              {text}
-            </motion.p>
-          ))}
+          <motion.p variants={fadeUp} className="body text-bone/65">
+            The system is intact. The instruction is direct. The lineage is active.
+          </motion.p>
         </motion.div>
       </motion.div>
     </section>

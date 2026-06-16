@@ -40,10 +40,10 @@ export default function TheRoom() {
             The instruction adapts to the student. Not the other way around.
           </motion.p>
           <motion.p variants={fadeUp} className="body text-bone/70">
-            This is the model through which serious Wing Chun has always been transmitted. Not distributed to a group. Given to an individual who has earned the right to receive it.
+            The session adapts to your structure, your gaps, your development. What you misunderstand specifically gets corrected specifically. An instructor who is fully present with one student cannot be fully present with twenty.
           </motion.p>
           <motion.p variants={fadeUp} className="kfl-pullquote kfl-pullquote--gold">
-            Enrollment is limited. That limitation is the point.
+            Private sessions are limited by design. That is what makes them private.
           </motion.p>
         </motion.div>
 

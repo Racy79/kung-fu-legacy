@@ -32,19 +32,19 @@ export default function Recognition() {
 
         <motion.div variants={stagger} className="space-y-8">
           <motion.p variants={fadeUp} className="body text-bone/70">
-            You have trained. You have developed. At some point, group instruction reaches the limit of what it can give you — not because the instruction was poor, but because the format cannot do what individual transmission does.
+            Group instruction is designed for groups. The instructor manages the room. Corrections are necessarily general. Progression moves at the pace of a shared curriculum, not at the pace of you. That format has a ceiling.
           </motion.p>
           <motion.p variants={fadeUp} className="kfl-pullquote">
-            Technique can be taught in a class. Understanding requires direct transmission.
+            Private instruction removes the ceiling.
           </motion.p>
           <motion.p variants={fadeUp} className="body text-bone/70">
-            What changes in private instruction is not the material. It is the quality of attention. Every correction is specific to you — your structure, your timing, your particular misunderstanding of the principle. There is no averaging. No managing a room. One instructor. One student. The art between them.
+            Every correction in a private session is specific to your body, your structure, your particular misunderstanding of a principle. There is no averaging. No managing a room. The session is entirely yours, and the instruction is built entirely around where you actually are.
           </motion.p>
           <motion.p variants={fadeUp} className="body text-bone/70">
-            This is how Wing Chun has always been transmitted at its deepest levels. Not distributed across a class. Passed directly — from someone who holds it to someone capable of receiving it.
+            When instruction is that specific, development accelerates. Not because the material is different — because the attention is undivided.
           </motion.p>
           <motion.p variants={fadeUp} className="kfl-pullquote kfl-pullquote--gold">
-            If that is what you have been looking for, you are in the right place.
+            If you want to understand Wing Chun — not just train in it — this is the model that makes that possible.
           </motion.p>
         </motion.div>
       </motion.div>

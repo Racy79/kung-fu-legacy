@@ -23,8 +23,8 @@ const forYou = [
   'You have trained and reached the limit of what group instruction can give you.',
   'You want to understand Wing Chun — not just perform it.',
   'You are willing to be corrected directly and specifically, without explanation or defense.',
-  'You understand that in a serious lineage, what you receive is proportional to what you bring to it.',
-  'You are ready to enter a lineage — not attend a program.',
+  'You understand that what you develop is proportional to how seriously you work between sessions.',
+  'You are looking for an instructor who can explain why — not just demonstrate what.',
 ]
 
 export default function Filter() {
