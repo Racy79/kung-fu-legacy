@@ -38,5 +38,9 @@
 | A16 | Weekly Apprenticeship Session group format can serve multiple Members per fixed 2.5-hour block without quality degradation | Commercial Operating Model | Assumed | Rafael's own judgment once a real cohort exists; no data yet |
 | A17 | Individual Guidance Session frequency (once/week vs. twice/week per Member) is undetermined | Commercial Operating Model, open question | Open | Rafael's direct answer |
 | A18 | "Apprenticeship Cohort" does not necessarily imply cohort-based intake — treated as an open question, not assumed either way | Commercial Operating Model, open question | Open | Rafael's direct answer |
+| A19 | Five-phase structure (Threshold, Foundation, Friction, Integration, Ownership) accurately maps real developmental experience over a first year | First-Year Member Journey | Assumed | Real Member experience once the validated-learning cohort progresses through a full year |
+| A20 | The "Friction" phase (months 3–6) is where attrition risk concentrates | First-Year Member Journey, drawn from the Blueprint's custodial-character framework rather than KFL-specific data | Assumed | Actual retention/departure timing once tracked (Client Acquisition Architecture's Retention stage, currently uncaptured) |
+| A21 | The Wait stage (post-application, pre-interview) is a real, undesigned source of applicant anxiety | Applicant Journey | Assumed | Direct applicant feedback once the validated-learning cohort exists |
+| A22 | A rejected-but-seriously-considered applicant deserves more than a form decline | Applicant Journey | Assumed | Rafael's own judgment; no data possible on this |
 
 This table should grow with every subsequent execution-phase document — add a row, don't just narrate the assumption in prose and move on.
