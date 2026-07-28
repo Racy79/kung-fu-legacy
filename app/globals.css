@@ -213,6 +213,77 @@
            disabled:opacity-40 disabled:cursor-not-allowed;
   }
 
+  /* ── Vlog / journal markdown body ────────────────────────────────────
+     Styles raw elements produced by react-markdown inside .prose-vlog.
+     Reuses the existing named type scale rather than ad-hoc sizes.       */
+  .prose-vlog h1,
+  .prose-vlog h2 {
+    font-family: var(--font-playfair), Georgia, serif;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 400;
+    color: #E8E3D9;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .prose-vlog h3 {
+    font-family: var(--font-inter), system-ui, sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #E8E3D9;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .prose-vlog p {
+    margin-bottom: 1.25rem;
+  }
+
+  .prose-vlog a {
+    color: #C6A962;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .prose-vlog ul,
+  .prose-vlog ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+  }
+
+  .prose-vlog ul { list-style: disc; }
+  .prose-vlog ol { list-style: decimal; }
+
+  .prose-vlog li {
+    margin-bottom: 0.5rem;
+  }
+
+  .prose-vlog blockquote {
+    font-family: var(--font-playfair), Georgia, serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-style: italic;
+    color: rgba(232, 227, 217, 0.92);
+    border-left: 2px solid #C6A962;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .prose-vlog code {
+    font-family: monospace;
+    font-size: 14px;
+    background: rgba(232, 227, 217, 0.08);
+    padding: 0.15rem 0.4rem;
+  }
+
+  .prose-vlog img {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+  }
+
   /* ── Form field ───────────────────────────────────────────────────────*/
   .field {
     font-family: var(--font-inter), system-ui, sans-serif;
