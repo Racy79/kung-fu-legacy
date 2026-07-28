@@ -17,7 +17,7 @@ I've stopped believing that discipline is measured by extraordinary moments. It'
 
 For years I thought balance meant giving equal attention to everything. It doesn't. Life has seasons. Sometimes work demands more. Sometimes family does. Sometimes my health needs immediate attention. Balance isn't giving everything the same amount of time. Balance is refusing to let one part of life destroy the others. A man can build a successful business while losing his marriage. He can become physically strong while drowning in debt. He can earn respect from strangers while neglecting his own children. None of that is balance.
 
-The longer I train, the more I realize Kung Fu was never just teaching me how to fight. It was teaching me how to govern myself. Every stance teaches stability. Every correction teaches humility. Every repetition teaches patience. Every mistake teaches awareness. Those lessons don't belong inside the Gwoon. They belong everywhere: in my body, my home, my work, my relationships, my finances, and my faith.
+The longer I train, the more I realize Kung Fu was teaching me much more than how to fight. It was teaching me how to govern myself. Every stance teaches stability. Every correction teaches humility. Every repetition teaches patience. Every mistake teaches awareness. Those lessons don't belong inside the Gwoon. They belong everywhere: in my body, my home, my work, my relationships, my finances, and my faith.
 
 At the end of my life, no one will remember how beautiful my forms were if my life itself was out of balance. The greatest compliment someone could ever give a martial artist isn't, "He's incredibly skilled." It's, "You can tell he lives what he teaches." That's the kind of martial artist I hope to become.
 
