@@ -52,5 +52,15 @@ export async function POST(req: NextRequest) {
     console.error('Resend error:', err)
   }
 
+  try {
+    await fetch('https://services.leadconnectorhq.com/hooks/rIR3dkE4oVG2xej3Rs5T/webhook-trigger/72e483cd-55e9-444e-a76f-3f73d1a52613', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    })
+  } catch (err) {
+    console.error('GHL webhook error:', err)
+  }
+
   return NextResponse.json({ ok: true })
 }

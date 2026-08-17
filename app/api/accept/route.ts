@@ -19,13 +19,13 @@ export async function GET(req: NextRequest) {
 
 You are being invited to move forward.
 
-This is not an offer extended lightly. The men in this brotherhood were selected for who they are and what they bring — not simply what they want to receive.
+This is not an offer extended lightly. Private transmission requires the right fit — presence, receptivity, and a real commitment to the practice, not simply a desire to receive it.
 
 The next step is a direct conversation. Use the link below to schedule a time.
 
 https://calendly.com/rafaelgonzalezrosado/30min
 
-Come prepared. We will discuss what this commitment looks like, what you bring, and whether this is the right moment for you to enter.
+Come prepared. We will discuss what this commitment looks like, what you bring, and whether this is the right moment for you to begin.
 
 Rafael Gonzalez
 Kung Fu Legacy

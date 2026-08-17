@@ -19,7 +19,7 @@ export async function GET(req: NextRequest) {
 
 At this time, we will not be moving forward.
 
-This is not a reflection of your character or your potential. The brotherhood is small by design, and selection is based on fit — for the group as much as for the individual.
+This is not a reflection of your character or your potential. Private transmission is small by design, and selection is based on fit — for the practice as much as for the individual.
 
 The door is not permanently closed. But we do not maintain waitlists or invite reapplication on a set timeline.
 
