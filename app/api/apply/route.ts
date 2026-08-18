@@ -12,8 +12,8 @@ export async function POST(req: NextRequest) {
 
   const encodedName = encodeURIComponent(fullName)
   const encodedEmail = encodeURIComponent(email)
-  const acceptUrl = `https://thekungfulegacy.com/api/accept?name=${encodedName}&email=${encodedEmail}`
-  const rejectUrl = `https://thekungfulegacy.com/api/reject?name=${encodedName}&email=${encodedEmail}`
+  const acceptUrl = `https://services.leadconnectorhq.com/hooks/rIR3dkE4oVG2xej3Rs5T/webhook-trigger/06520890-7e4a-4168-8de5-78af25a988cc?name=${encodedName}&email=${encodedEmail}`
+  const rejectUrl = `https://services.leadconnectorhq.com/hooks/rIR3dkE4oVG2xej3Rs5T/webhook-trigger/00f56c55-0b78-417c-a9bf-dc48df6f6b8f?name=${encodedName}&email=${encodedEmail}`
 
   const html = `
     <h2 style="color:#C6A962;margin:0 0 16px">🥋 New Application — Kung Fu Legacy</h2>
