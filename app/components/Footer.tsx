@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -25,6 +26,11 @@ export default function Footer() {
         <p className="kfl-ghost mb-8 text-center">
           Yip Man &middot; Moy Yat &middot; Moy Don &middot; Moy Don Xùn
         </p>
+
+        {/* Writings link */}
+        <Link href="/writings" className="kfl-ghost mb-8 hover:text-gold transition-colors duration-300">
+          Writings
+        </Link>
 
         {/* Thin gold rule */}
         <div className="w-8 h-px bg-gold/20 mb-8" />
