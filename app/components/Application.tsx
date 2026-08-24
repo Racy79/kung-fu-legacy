@@ -78,6 +78,26 @@ export default function Application() {
     }
   }, [status])
 
+  // Capture UTM params on landing (persists across the visit even if the user
+  // navigates before applying) so every application is tagged by channel —
+  // needed to know which marketing spend is actually producing applicants.
+  const [utm, setUtm] = useState({ utm_source: '', utm_medium: '', utm_campaign: '' })
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    const fromUrl = {
+      utm_source: params.get('utm_source') || '',
+      utm_medium: params.get('utm_medium') || '',
+      utm_campaign: params.get('utm_campaign') || '',
+    }
+    if (fromUrl.utm_source || fromUrl.utm_medium || fromUrl.utm_campaign) {
+      sessionStorage.setItem('kfl_utm', JSON.stringify(fromUrl))
+      setUtm(fromUrl)
+    } else {
+      const saved = sessionStorage.getItem('kfl_utm')
+      if (saved) setUtm(JSON.parse(saved))
+    }
+  }, [])
+
   const set = (field: keyof FormData, value: string) => {
     setForm(prev => ({ ...prev, [field]: value }))
     setErrors(prev => ({ ...prev, [field]: '' }))
@@ -126,7 +146,7 @@ export default function Application() {
       const res = await fetch('/api/apply', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, ...utm }),
       })
 
       const data = await res.json()

@@ -8,7 +8,7 @@ const RECIPIENTS = [
 export async function POST(req: NextRequest) {
   const resend = new Resend(process.env.RESEND_API_KEY)
   const body = await req.json()
-  const { fullName, phone, email, experience, profession, whyTrain, whatYouBring, developGoals, commitToTraining, acceptChallenge, willTravel, understandCommunity } = body
+  const { fullName, phone, email, experience, profession, whyTrain, whatYouBring, developGoals, commitToTraining, acceptChallenge, willTravel, understandCommunity, utm_source, utm_medium, utm_campaign } = body
 
   const encodedName = encodeURIComponent(fullName)
   const encodedEmail = encodeURIComponent(email)
@@ -30,6 +30,7 @@ export async function POST(req: NextRequest) {
       <tr><td style="padding:6px 16px 6px 0;color:#666">Ready to be led</td><td style="padding:6px 0">${acceptChallenge}</td></tr>
       <tr><td style="padding:6px 16px 6px 0;color:#666">Will travel</td><td style="padding:6px 0">${willTravel}</td></tr>
       <tr><td style="padding:6px 16px 6px 0;color:#666">Understands community</td><td style="padding:6px 0">${understandCommunity}</td></tr>
+      <tr><td style="padding:6px 16px 6px 0;color:#666">Source</td><td style="padding:6px 0">${utm_source || 'direct'} / ${utm_medium || '—'} / ${utm_campaign || '—'}</td></tr>
     </table>
     <div style="margin-top:32px;display:flex;gap:16px">
       <a href="${acceptUrl}" style="background:#C6A962;color:#0B0B0B;padding:12px 28px;text-decoration:none;font-family:sans-serif;font-weight:bold;font-size:14px">Accept</a>
