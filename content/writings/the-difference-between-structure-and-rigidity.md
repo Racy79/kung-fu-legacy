@@ -1,6 +1,6 @@
 ---
 title: "The Difference Between Structure and Rigidity"
-date: "2026-08-30"
+date: "2026-08-29"
 register: "technical"
 excerpt: "One survives contact. The other breaks the moment it meets resistance."
 ---

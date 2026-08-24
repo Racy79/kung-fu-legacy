@@ -1,6 +1,6 @@
 ---
 title: "What Chi Sao Is Actually Measuring"
-date: "2026-08-28"
+date: "2026-08-31"
 register: "technical"
 excerpt: "It isn't sparring with sticky hands. It's a sensor, not a contest."
 ---

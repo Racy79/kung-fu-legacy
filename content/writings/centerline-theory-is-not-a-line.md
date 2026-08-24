@@ -1,6 +1,6 @@
 ---
 title: "Centerline Theory Is Not a Line"
-date: "2026-09-01"
+date: "2026-08-27"
 register: "technical"
 excerpt: "It was never about a line down the middle of your body. It's a relationship, and it moves."
 ---

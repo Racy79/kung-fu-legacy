@@ -1,6 +1,6 @@
 ---
 title: "What Traditional Transmission Loses When It Becomes a Curriculum"
-date: "2026-09-02"
+date: "2026-08-26"
 register: "tradition"
 excerpt: "A curriculum can be franchised. A transmission can't."
 ---

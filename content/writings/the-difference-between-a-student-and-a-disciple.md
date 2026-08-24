@@ -1,6 +1,6 @@
 ---
 title: "The Difference Between a Student and a Disciple"
-date: "2026-08-29"
+date: "2026-08-30"
 register: "tradition"
 excerpt: "One learns the art. The other is trusted to carry it."
 ---

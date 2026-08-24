@@ -1,6 +1,6 @@
 ---
 title: "On Being Corrected: The Skill Most Students Never Learn"
-date: "2026-09-04"
+date: "2026-08-24"
 register: "tradition"
 excerpt: "How someone receives a correction tells you more than the correction itself."
 ---

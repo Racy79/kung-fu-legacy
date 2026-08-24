@@ -1,6 +1,6 @@
 ---
 title: "Why I Teach Fewer Students, Not More"
-date: "2026-08-25"
+date: "2026-09-03"
 register: "tradition"
 excerpt: "A full room and a full transmission are not the same thing."
 ---

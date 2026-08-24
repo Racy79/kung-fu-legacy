@@ -1,6 +1,6 @@
 ---
 title: "Why Siu Nim Tao Is Not a Beginner's Form"
-date: "2026-08-24"
+date: "2026-09-04"
 register: "technical"
 excerpt: "Everything that comes later is already contained in that first form."
 ---

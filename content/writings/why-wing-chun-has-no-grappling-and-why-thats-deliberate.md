@@ -1,6 +1,6 @@
 ---
 title: "Why Wing Chun Has No Grappling — And Why That's Deliberate"
-date: "2026-09-03"
+date: "2026-08-25"
 register: "technical"
 excerpt: "It isn't a gap in the system. It's a boundary the system was built around."
 ---

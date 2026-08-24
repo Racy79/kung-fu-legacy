@@ -1,6 +1,6 @@
 ---
 title: "The Quiet Test: What Teachers Actually Watch For"
-date: "2026-08-27"
+date: "2026-09-01"
 register: "tradition"
 excerpt: "The moments that reveal someone rarely look like tests at all."
 ---

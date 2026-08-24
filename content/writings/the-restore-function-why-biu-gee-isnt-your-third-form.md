@@ -1,6 +1,6 @@
 ---
 title: "The Restore Function: Why Biu Gee Isn't Your Third Form"
-date: "2026-08-26"
+date: "2026-09-02"
 register: "technical"
 excerpt: "Biu Gee isn't the next step. It's what happens when the plan already failed."
 ---

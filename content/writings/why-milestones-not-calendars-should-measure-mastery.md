@@ -1,6 +1,6 @@
 ---
 title: "Why Milestones, Not Calendars, Should Measure Mastery"
-date: "2026-08-31"
+date: "2026-08-28"
 register: "tradition"
 excerpt: "Time in the room is not the same thing as time actually spent developing."
 ---
